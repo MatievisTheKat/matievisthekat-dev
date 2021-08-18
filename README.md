@@ -1,4 +1,3 @@
-# matievisthekat.dev
 # ***OUTDATED check out the 'rewrite' branch***
 
 The first official rewrite repository for https://matievisthekat.dev (second can be found on the 'rewrite' branch)
