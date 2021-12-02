@@ -30,7 +30,7 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          # token: ${{ secrets.GH_TOKEN }}
           author: 'Github Actions <41898282+github-actions[bot]@users.noreply.github.com>'
           committer: 'Github Actions <41898282+github-actions[bot]@users.noreply.github.com>'
           commit-message: '[action] Build css for ${{ github.ref_name }}@${{ github.sha }}'
