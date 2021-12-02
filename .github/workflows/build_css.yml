@@ -1,4 +1,4 @@
-name: Build Css
+name: Build css
 
 on:
   push:
