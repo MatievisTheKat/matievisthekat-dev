@@ -24,12 +24,6 @@ jobs:
       - name: Verify Sass version
         run: sass --version
 
-      - name: Setup branch
-        run: git branch build_css_${{ github.run_number }}
-
-      - name: Checkout branch
-        run: git checkout build_css_${{ github.run_number }}
-
       - name: Compile Sass
         run: sass --no-color --style=compressed ./sass:./css
 
