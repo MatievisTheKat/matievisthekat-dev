@@ -41,4 +41,4 @@ jobs:
           git commit -m '[action] Build css for ${{ github.ref_name }}@${{ github.sha }}'
 
       - name: Push updates to new branch
-        run: git push
+        run: git push --set-upstream origin build_css_${{ github.run_number }}
