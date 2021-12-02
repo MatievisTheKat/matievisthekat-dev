@@ -24,24 +24,19 @@ jobs:
       - name: Verify Sass version
         run: sass --version
 
+      - name: Setup branch
+        run: git branch build_css_${{ github.run_number }}
+
+      - name: Checkout branch
+        run: git checkout build_css_${{ github.run_number }}
+
       - name: Compile Sass
         run: sass --no-color --style=compressed ./sass:./css
 
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          # token: ${{ secrets.GH_TOKEN }}
-          author: 'Github Actions <41898282+github-actions[bot]@users.noreply.github.com>'
-          committer: 'Github Actions <41898282+github-actions[bot]@users.noreply.github.com>'
-          commit-message: '[action] Build css for ${{ github.ref_name }}@${{ github.sha }}'
-          branch: build_css
-          branch_suffix: short-commit-hash
-          base: master
-          reviewers: matievisthekat
-          labels: automated, styles
-          title: '[action] Update css from ${{ github.ref_name }}'
-          body: >
-            *This pull request was automatically generated automatically*
-
-            ## Update css from ${{ github.ref_name }}
-            This pr updates branch `ph-pages` with the latest css from `${{ github.ref_name }}`
+      - name: Commit updated css
+        run: |
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --local user.name 'Github Actions'
+          git add .
+          git commit -m '[actions] Build css'
+          git push origin master
