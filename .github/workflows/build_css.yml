@@ -1,11 +1,11 @@
-name: Compile Sass
+name: Build Css
 
 on:
   push:
     branches:
       - master
-    # paths:
-    #   - 'sass/*'
+    paths:
+      - 'sass/*'
 
 jobs:
   build_css:
