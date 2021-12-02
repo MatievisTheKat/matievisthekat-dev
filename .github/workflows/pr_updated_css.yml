@@ -1,0 +1,27 @@
+name: PR Updated Css
+
+on:
+  push:
+    branches:
+      - build_css_*
+
+jobs:
+  pull_request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Initialize Pull Request
+        uses: gha-utilities/init-pull-request@v0.3.2
+        with:
+          verbose: true
+          pull_request_token: ${{ secrets.GITHUB_TOKEN }}
+          head: github.ref_name
+          base: gh-pages
+          title: '[action] Update css from ${{ github.ref_name }}'
+          body: >
+            *This pull request was automatically generated automatically*
+
+            ## Update css from ${{ github.ref_name }}
+            This pr updates branch `ph-pages` with the latest css from `${{ github.ref_name }}`
