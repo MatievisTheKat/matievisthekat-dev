@@ -20,7 +20,7 @@ jobs:
         run: npm install -g sass
 
       - name: Verify Sass version
-        run: sass -v
+        run: sass --version
 
       - name: Setup branch
         run: git branch build_css_${{ github.run_number }}
