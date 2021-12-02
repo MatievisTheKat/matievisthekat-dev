@@ -1,0 +1,37 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "17.x"
+
+      - name: Install Sass
+        run: npm install -g sass
+
+      - name: Setup branch
+        run: git branch build_css_${{ github.run_number }}
+
+      - name: Checkout branch
+        run: git checkout build_css_${{ github.run_number }}
+
+      - name: Compile Sass
+        run: sass --no-color --update --style=compressed ./sass:./css
+
+      - name: Commit updated css
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Github Actions"
+          git add .
+          git commit -m "[action] Build css for ${{ github.ref_name }}@${{ github.sha }}"
+
+      - name: Push updates to new branch
+        run: git push
