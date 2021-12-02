@@ -3,7 +3,7 @@ name: PR Updated Css
 on:
   push:
     branches:
-      - build_css_*
+      - 'build_css_*'
 
 jobs:
   pull_request:
