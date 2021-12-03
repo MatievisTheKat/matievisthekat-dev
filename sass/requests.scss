@@ -1,7 +1,7 @@
 tbody#requests {
   cursor: default;
 
-  position: fixed;
+  position: absolute;
   left: 3rem;
   top: 10rem;
 
@@ -11,7 +11,7 @@ tbody#requests {
   border-collapse: collapse;
 }
 
-tr.total {
+tr#total {
   border-top: 1px solid rgb(185, 185, 185);
 }
 
