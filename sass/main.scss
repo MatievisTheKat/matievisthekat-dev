@@ -1,18 +1,24 @@
 @import './colours';
 
-$theme-options: 'light'; //, 'dark' , 'solarized';
+$themes: 'light'; //, 'dark' , 'solarized';
 
 $colourblind-options: 'normal', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
+$bg-colour: map-get($colours, 'light-normal-secondary');
+
 body {
-  @each $opt in $colourblind-options {
-    .#{$opt} {
-      @each $theme in $theme-options {
-        .#{$theme} {
-          $bg-colour: map-get($colours, '#{$theme}-#{$opt}-secondary');
+  @each $theme in $themes {
+    .#{$theme} {
+      @each $colourblindness in $colourblind-options {
+        .#{$colourblindness} {
+          $bg-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary');
         }
       }
     }
   }
+}
+
+body {
+  background-color: $bg-colour;
 }
