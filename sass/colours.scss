@@ -43,7 +43,7 @@ $light-achromatopsia-secondary: $light-normal-secondary;
 // light -> protanomaly
 $light-protanomaly-primary: hsl(168, 6%, 15%);
 $light-protanomaly-primary-2: hsl(200, 10%, 36%);
-$cadet-protanomaly-primary-3: hsl(202, 15%, 57%);
+$light-protanomaly-primary-3: hsl(202, 15%, 57%);
 $light-protanomaly-highlight: hsl(218, 23%, 50%);
 $light-protanomaly-tertiary: hsl(34, 27%, 65%);
 $light-protanomaly-secondary: $light-normal-secondary;
@@ -64,13 +64,13 @@ $light-tritanomaly-highlight: hsl(194, 25%, 49%);
 $light-tritanomaly-tertiary: hsl(9, 32%, 67%);
 $light-tritanomaly-secondary: $light-normal-secondary;
 
-// light -> achromanomaly
-$light-achromanomaly-primary: hsl(150, 5%, 16%);
-$light-achromanomaly-primary-2: hsl(175, 6%, 37%);
-$light-achromanomaly-primary-3: hsl(177, 9%, 58%);
-$light-achromanomaly-highlight: hsl(201, 12%, 49%);
-$light-achromanomaly-tertiary: hsl(16, 15%, 66%);
-$light-achromanomaly-secondary: hsl(60, 3%, 93%);
+// light -> achromatomaly
+$light-achromatomaly-primary: hsl(150, 5%, 16%);
+$light-achromatomaly-primary-2: hsl(175, 6%, 37%);
+$light-achromatomaly-primary-3: hsl(177, 9%, 58%);
+$light-achromatomaly-highlight: hsl(201, 12%, 49%);
+$light-achromatomaly-tertiary: hsl(16, 15%, 66%);
+$light-achromatomaly-secondary: hsl(60, 3%, 93%);
 
 // this map is here because sass doesnt let you referrence variables dynamically
 // i.e. $bg-colour: $light-$option-secondary

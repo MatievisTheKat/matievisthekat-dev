@@ -1,9 +1,9 @@
 @import './colours';
 
-$theme-options: 'light';//, 'dark' , 'solarized';
+$theme-options: 'light'; //, 'dark' , 'solarized';
 
 $colourblind-options: 'normal', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
-  'deuteranomaly', 'tritanomaly', 'achromanomaly';
+  'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
 body {
   @each $opt in $colourblind-options {
