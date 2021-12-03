@@ -9,6 +9,10 @@ tbody#requests {
   border-bottom: 1px solid #b9b9b9;
 }
 
+tr.total {
+  border-top: 1px solid #b9b9b9;
+}
+
 td.size {
   width: 20%;
   text-align: center;

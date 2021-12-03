@@ -4,7 +4,8 @@
     "outDir": "./js",
     "rootDir": "./ts",
     "removeComments": true,
-    "strict": true
+    "strict": true,
+    "lib": ["es2015", "dom"]
   },
   "include": ["./ts/**/*.ts"]
 }
