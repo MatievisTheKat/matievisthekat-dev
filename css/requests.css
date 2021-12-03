@@ -5,13 +5,8 @@ tbody#requests {
   left: 3rem;
   top: 10rem;
   font-family: monospace;
-}
-
-tr.request {
-  display: block;
+  color: #636363;
   border-bottom: 1px solid #b9b9b9;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
 }
 
 td.size {
@@ -20,7 +15,7 @@ td.size {
 }
 
 td.url {
-  max-width: 50%;
+  width: 50%;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
