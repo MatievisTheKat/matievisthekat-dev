@@ -2,9 +2,9 @@
 
 ### palettes
 
-| name          |                                light                                 | dark | solarized |
+| colourblindness |                                light                                 | dark | solarized |
 | :------------ | :------------------------------------------------------------------: | :--: | :--: |
-| primary       | [link](https://coolors.co/242d29-506966-7ba4a2-5d88a1-c79b8d-eeeeee) | n/a | n/a |
+| none       | [link](https://coolors.co/242d29-506966-7ba4a2-5d88a1-c79b8d-eeeeee) | n/a | n/a |
 | protanopia    | [link](https://coolors.co/272729-5a5b66-8c8da2-6f709a-b3b390-eeeeee) | n/a | n/a |
 | dueteranopia  | [link](https://coolors.co/27262a-595766-8a87a2-6d6999-b6b991-eeeeee) | n/a | n/a |
 | tritanopia    | [link](https://coolors.co/242a2a-516767-7da2a2-5f9695-c49393-eeeeee) | n/a | n/a |
