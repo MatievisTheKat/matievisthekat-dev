@@ -22,7 +22,7 @@ $light-deuteranopia-primary-2: hsl(248, 8%, 37%);
 $light-deuteranopia-primary-3: hsl(247, 13%, 58%);
 $light-deuteranopia-highlight: hsl(245, 19%, 51%);
 $light-deuteranopia-tertiary: hsl(64, 22%, 65%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-deuteranopia-secondary: $light-normal-secondary;
 
 // light -> tritanopia
 $light-tritanopia-primary: hsl(180, 8%, 15%);
@@ -30,7 +30,7 @@ $light-tritanopia-primary-2: hsl(180, 12%, 36%);
 $light-tritanopia-primary-3: hsl(180, 17%, 56%);
 $light-tritanopia-highlight: hsl(179, 22%, 48%);
 $light-tritanopia-tertiary: hsl(0, 29%, 67%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-tritanopia-secondary: $light-normal-secondary;
 
 // light -> achromatopsia
 $light-achromatopsia-primary: hsl(0, 0%, 16%);
@@ -38,7 +38,7 @@ $light-achromatopsia-primary-2: hsl(0, 0%, 38%);
 $light-achromatopsia-primary-3: hsl(0, 0%, 59%);
 $light-achromatopsia-highlight: hsl(0, 0%, 49%);
 $light-achromatopsia-tertiary: hsl(0, 0%, 65%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-achromatopsia-secondary: $light-normal-secondary;
 
 // light -> protanomaly
 $light-protanomaly-primary: hsl(168, 6%, 15%);
@@ -46,7 +46,7 @@ $light-protanomaly-primary-2: hsl(200, 10%, 36%);
 $cadet-protanomaly-primary-3: hsl(202, 15%, 57%);
 $light-protanomaly-highlight: hsl(218, 23%, 50%);
 $light-protanomaly-tertiary: hsl(34, 27%, 65%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-protanomaly-secondary: $light-normal-secondary;
 
 // light -> deuteranomaly
 $light-deuteranomaly-primary: hsl(168, 6%, 15%);
@@ -54,7 +54,7 @@ $light-deuteranomaly-primary-2: hsl(194, 9%, 37%);
 $light-deuteranomaly-primary-3: hsl(197, 14%, 57%);
 $light-deuteranomaly-highlight: hsl(215, 22%, 51%);
 $light-deuteranomaly-tertiary: hsl(30, 27%, 65%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-deuteranomaly-secondary: $light-normal-secondary;
 
 // light -> tritanomaly
 $light-tritanomaly-primary: hsl(163, 9%, 15%);
@@ -62,7 +62,7 @@ $light-tritanomaly-primary-2: hsl(175, 13%, 36%);
 $light-tritanomaly-primary-3: hsl(178, 17%, 56%);
 $light-tritanomaly-highlight: hsl(194, 25%, 49%);
 $light-tritanomaly-tertiary: hsl(9, 32%, 67%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-tritanomaly-secondary: $light-normal-secondary;
 
 // light -> achromanomaly
 $light-achromanomaly-primary: hsl(150, 5%, 16%);
