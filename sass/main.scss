@@ -2,10 +2,10 @@
 
 $themes: 'light'; //, 'dark' , 'solarized';
 
-$colourblind-options: 'normal', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
+$colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
-$bg-colour: map-get($colours, 'light-normal-secondary');
+$bg-colour: map-get($colours, 'light-none-secondary');
 
 body {
   @each $theme in $themes {

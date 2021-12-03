@@ -1,12 +1,12 @@
 $sass-branding-colour: #c69;
 
 // light -> primary
-$light-normal-primary: hsl(153, 11%, 16%);
-$light-normal-primary-2: hsl(173, 14%, 36%);
-$light-normal-primary-3: hsl(177, 18%, 56%);
-$light-normal-highlight: hsl(202, 27%, 50%);
-$light-normal-tertiary: hsl(14, 34%, 67%);
-$light-normal-secondary: hsl(0, 0%, 93%);
+$light-none-primary: hsl(153, 11%, 16%);
+$light-none-primary-2: hsl(173, 14%, 36%);
+$light-none-primary-3: hsl(177, 18%, 56%);
+$light-none-highlight: hsl(202, 27%, 50%);
+$light-none-tertiary: hsl(14, 34%, 67%);
+$light-none-secondary: hsl(0, 0%, 93%);
 
 // light -> protanopia
 $light-protanopia-primary: hsl(240, 3%, 16%);
@@ -14,7 +14,7 @@ $light-protanopia-primary-2: hsl(235, 6%, 38%);
 $light-protanopia-primary-3: hsl(237, 11%, 59%);
 $light-protanopia-highlight: hsl(239, 18%, 52%);
 $light-protanopia-tertiary: hsl(60, 19%, 63%);
-$light-protanopia-secondary: $light-normal-secondary;
+$light-protanopia-secondary: $light-none-secondary;
 
 // light -> deuteranopia
 $light-deuteranopia-primary: hsl(255, 5%, 16%);
@@ -22,7 +22,7 @@ $light-deuteranopia-primary-2: hsl(248, 8%, 37%);
 $light-deuteranopia-primary-3: hsl(247, 13%, 58%);
 $light-deuteranopia-highlight: hsl(245, 19%, 51%);
 $light-deuteranopia-tertiary: hsl(64, 22%, 65%);
-$light-deuteranopia-secondary: $light-normal-secondary;
+$light-deuteranopia-secondary: $light-none-secondary;
 
 // light -> tritanopia
 $light-tritanopia-primary: hsl(180, 8%, 15%);
@@ -30,7 +30,7 @@ $light-tritanopia-primary-2: hsl(180, 12%, 36%);
 $light-tritanopia-primary-3: hsl(180, 17%, 56%);
 $light-tritanopia-highlight: hsl(179, 22%, 48%);
 $light-tritanopia-tertiary: hsl(0, 29%, 67%);
-$light-tritanopia-secondary: $light-normal-secondary;
+$light-tritanopia-secondary: $light-none-secondary;
 
 // light -> achromatopsia
 $light-achromatopsia-primary: hsl(0, 0%, 16%);
@@ -38,7 +38,7 @@ $light-achromatopsia-primary-2: hsl(0, 0%, 38%);
 $light-achromatopsia-primary-3: hsl(0, 0%, 59%);
 $light-achromatopsia-highlight: hsl(0, 0%, 49%);
 $light-achromatopsia-tertiary: hsl(0, 0%, 65%);
-$light-achromatopsia-secondary: $light-normal-secondary;
+$light-achromatopsia-secondary: $light-none-secondary;
 
 // light -> protanomaly
 $light-protanomaly-primary: hsl(168, 6%, 15%);
@@ -46,7 +46,7 @@ $light-protanomaly-primary-2: hsl(200, 10%, 36%);
 $light-protanomaly-primary-3: hsl(202, 15%, 57%);
 $light-protanomaly-highlight: hsl(218, 23%, 50%);
 $light-protanomaly-tertiary: hsl(34, 27%, 65%);
-$light-protanomaly-secondary: $light-normal-secondary;
+$light-protanomaly-secondary: $light-none-secondary;
 
 // light -> deuteranomaly
 $light-deuteranomaly-primary: hsl(168, 6%, 15%);
@@ -54,7 +54,7 @@ $light-deuteranomaly-primary-2: hsl(194, 9%, 37%);
 $light-deuteranomaly-primary-3: hsl(197, 14%, 57%);
 $light-deuteranomaly-highlight: hsl(215, 22%, 51%);
 $light-deuteranomaly-tertiary: hsl(30, 27%, 65%);
-$light-deuteranomaly-secondary: $light-normal-secondary;
+$light-deuteranomaly-secondary: $light-none-secondary;
 
 // light -> tritanomaly
 $light-tritanomaly-primary: hsl(163, 9%, 15%);
@@ -62,7 +62,7 @@ $light-tritanomaly-primary-2: hsl(175, 13%, 36%);
 $light-tritanomaly-primary-3: hsl(178, 17%, 56%);
 $light-tritanomaly-highlight: hsl(194, 25%, 49%);
 $light-tritanomaly-tertiary: hsl(9, 32%, 67%);
-$light-tritanomaly-secondary: $light-normal-secondary;
+$light-tritanomaly-secondary: $light-none-secondary;
 
 // light -> achromatomaly
 $light-achromatomaly-primary: hsl(150, 5%, 16%);
@@ -75,12 +75,12 @@ $light-achromatomaly-secondary: hsl(60, 3%, 93%);
 // this map is here because sass doesnt let you referrence variables dynamically
 // i.e. $bg-colour: $light-$option-secondary
 $colours: (
-  'light-normal-primary': $light-normal-primary,
-  'light-normal-primary-2': $light-normal-primary-2,
-  'light-normal-primary-3': $light-normal-primary-3,
-  'light-normal-highlight': $light-normal-highlight,
-  'light-normal-tertiary': $light-normal-tertiary,
-  'light-normal-secondary': $light-normal-secondary,
+  'light-none-primary': $light-none-primary,
+  'light-none-primary-2': $light-none-primary-2,
+  'light-none-primary-3': $light-none-primary-3,
+  'light-none-highlight': $light-none-highlight,
+  'light-none-tertiary': $light-none-tertiary,
+  'light-none-secondary': $light-none-secondary,
   'light-protanopia-primary': $light-protanopia-primary,
   'light-protanopia-primary-2': $light-protanopia-primary-2,
   'light-protanopia-primary-3': $light-protanopia-primary-3,
