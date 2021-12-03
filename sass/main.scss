@@ -1,0 +1,29 @@
+@import "./colours.sass";
+
+$theme-options: "light", "dark", "solarized";
+
+$colourblind-options: "normal", "protanopia", "deuteranopia", "tritanopia",
+  "achromatopsia", "protanomaly", "deuteranomaly", "tritanomaly",
+  "achromatomaly";
+
+// this map is here because sass doesnt let you referrence variables dynamically
+// i.e. $bg-colour: $light-$option-secondary
+$colours: (
+  "light-normal-primary": $light-normal-primary,
+  "light-normal-primary-2": $light-normal-primary-2,
+  "light-normal-primary-3": $light-normal-primary-3,
+  "light-normal-highlight": $light-normal-highlight,
+);
+
+body {
+  @each $opt in $colourblind-options {
+    .#{$opt} {
+      @each $theme in $theme-options {
+        .#{$theme} {
+          $bg-colour: $test-$theme-$opt-secondary;
+          @debug $bg-colour;
+        }
+      }
+    }
+  }
+}
