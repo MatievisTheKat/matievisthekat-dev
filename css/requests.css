@@ -1,12 +1,11 @@
 tbody#requests {
-  user-select: none;
   cursor: default;
   position: fixed;
   left: 3rem;
   top: 10rem;
   font-family: monospace;
   color: #636363;
-  border-bottom: 1px solid #b9b9b9;
+  border-collapse: collapse;
 }
 
 tr.total {
