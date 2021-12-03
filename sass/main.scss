@@ -1,9 +1,9 @@
 @import './colours';
 
-$theme-options: 'light', 'dark', 'solarized';
+$theme-options: 'light';//, 'dark' , 'solarized';
 
 $colourblind-options: 'normal', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
-  'deuteranomaly', 'tritanomaly', 'achromatomaly';
+  'deuteranomaly', 'tritanomaly', 'achromanomaly';
 
 body {
   @each $opt in $colourblind-options {
@@ -11,7 +11,6 @@ body {
       @each $theme in $theme-options {
         .#{$theme} {
           $bg-colour: map-get($colours, '#{$theme}-#{$opt}-secondary');
-          @debug $bg-colour;
         }
       }
     }
