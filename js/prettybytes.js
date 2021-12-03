@@ -5,7 +5,7 @@ function prettybytes(number) {
         return ` 0${BIBYTE_UNITS[0]}`;
     const exponent = Math.min(Math.floor(Math.log(number) / Math.log(1024)), BIBYTE_UNITS.length - 1);
     number /= Math.pow(1024, exponent);
-    const numberString = number.toLocaleString();
+    const numberString = number.toLocaleString(undefined, { maximumFractionDigits: 2 });
     const unit = BIBYTE_UNITS[exponent];
     return `${numberString}${unit}`;
 }
