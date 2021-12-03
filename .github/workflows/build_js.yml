@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - master
-  paths:
-    - ts/**/*.ts
+    paths:
+      - ts/**/*.ts
 
 jobs:
   build_js:
