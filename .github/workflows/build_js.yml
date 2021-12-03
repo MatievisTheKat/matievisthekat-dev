@@ -1,0 +1,40 @@
+name: Build js
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  paths:
+    - ts/**/*.ts
+
+jobs:
+  build_js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '17.x'
+
+      - name: Install TypeScript
+        run: npm install -g typescript
+
+      - name: Verify TypeScript version
+        run: tsc --version
+
+      - name: Compile TypeScript
+        run: tsc
+
+      - name: Commit updated js
+        run: |
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'Github Actions'
+          git pull
+          git add .
+          git commit -m '[actions] Build js'
+
+      - name: Push origin master
+        run: git push origin master
