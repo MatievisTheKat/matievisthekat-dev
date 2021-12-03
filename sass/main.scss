@@ -12,7 +12,7 @@ body {
     .#{$theme} {
       @each $colourblindness in $colourblind-options {
         .#{$colourblindness} {
-          $bg-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary');
+          $bg-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary') !global;
         }
       }
     }
