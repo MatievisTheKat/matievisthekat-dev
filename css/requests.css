@@ -3,7 +3,7 @@ tbody#requests {
   cursor: default;
   position: absolute;
   left: 7%;
-  top: 15%;
+  top: 5%;
   font-family: monospace;
   font-weight: 200;
   color: #bcbcb8;
@@ -29,7 +29,7 @@ td.size {
 }
 
 td.url {
-  width: 30vw;
+  width: 50vw;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
