@@ -21,7 +21,6 @@ setInterval(() => {
     }));
     for (const req of newRequests) {
         addRequest(req, true);
-        console.log(`added ${req.url}`);
     }
     entries = [...entries, ...newEntries];
     setTotals(entries);
