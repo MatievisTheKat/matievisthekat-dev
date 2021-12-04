@@ -13,3 +13,35 @@
 | deuteranomaly | [link](https://coolors.co/252a29-556266-8399a2-657c9d-bea68e-eeeeee) | n/a | n/a |
 | tritanomaly   | [link](https://coolors.co/242b29-506866-7ca3a2-5e8e9c-c5978f-eeeeee) | n/a | n/a |
 | achromatomaly | [link](https://coolors.co/272b29-596463-8a9d9c-6e828d-b5a19a-eeeeed) | n/a | n/a |
+
+### project structure
+- `~/.github` GitHub configuration
+  - `/workflows` GitHub workflows
+    - `/build_css.yml` build `~/css` from `~/sass`
+    - `/build_js.yml` build `~/js` from `~/ts`
+- `~/fonts` custom fonts
+  - `/raleway` Raleway custom font
+    - `/OFL.txt` Open Font License
+    - `/Raleway.*` font files in different formats (for browser compatibility)
+- `~/img` all images used in the site
+  - `/favicon.png` site favicon
+  - `/me.png` the same as `favicon.png` but square
+- `~/css` (mostly) auto-generated from `~/sass`
+  - `/**/*.min.css` non auto-generated css files
+  - `/**/*.css` auto-generated css files
+  - `/**/*.css.map` auto-generated css sourcemaps
+- `~/sass` Syntactically Awesome StyleSheets
+  - `/**/*.scss` scss formatted sass styles
+  - `/**/*.sass` sass formatted styles
+- `~/js` auto-generated from `~/ts`
+  - `/**/*.js` auto-generated js files
+  - `/**/*.js.map` auto-generated js sourcemaps
+- `~/ts`
+  - `/**/*.ts` typescript source files
+- `~/**/*.html` source html for site pages
+- `~/.prettierrc` Prettier formatting configuration
+- `~/tsconfig.json` typescript compiler configuration
+- `~/sass_watch.sh` shortcut script to build sass in dev mode
+- `~/tsc_watch.sh` shortcut script to build ts in dev mode
+- `~/CNAME` CNAME DNS record for GitHub Pages
+- `~/README.md` this file
