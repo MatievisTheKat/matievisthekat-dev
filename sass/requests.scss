@@ -9,8 +9,7 @@ tbody#requests {
 
   position: absolute;
   left: 7%;
-  top: 30%;
-  min-width: 60%;
+  top: 20%;
 
   font-family: monospace;
   color: rgb(99, 99, 99);
@@ -23,12 +22,12 @@ tr#total {
 }
 
 td.size {
-  width: 15%;
+  width: 20%;
   text-align: center;
 }
 
 td.url {
-  max-width: 300px;
+  width: 30vw;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
