@@ -1,4 +1,8 @@
 tbody#requests {
+  @media screen and (max-width: $small-screen-max) {
+    display: none;
+  }
+
   cursor: default;
 
   position: absolute;

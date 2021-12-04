@@ -1,1 +1,12 @@
-body{background-color:#eeeeed;color:#272b29}body,html{height:100vh;width:100vw}/*# sourceMappingURL=global.css.map */
+body {
+  background-color: #eeeeed;
+  color: #272b29;
+}
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=global.css.map */
