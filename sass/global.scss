@@ -25,3 +25,9 @@ body {
   background-color: $bg-colour;
   color: $text-colour;
 }
+
+body,
+html {
+  height: 100vh;
+  width: 100vw;
+}
