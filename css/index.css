@@ -11,5 +11,8 @@
     width: 50%;
   }
 }
+#intro > p {
+  animation-delay: 0.7s;
+}
 
 /*# sourceMappingURL=index.css.map */
