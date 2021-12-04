@@ -58,7 +58,7 @@ function setTotals(entries: PerformanceEntryList) {
 function addRequest(req: CustomRequest, fade = false) {
   tableBody.innerHTML += `
     <tr class="request ${fade ? 'animate__animated animate__fadeInDown' : ''}">
-      <td class="size">${prettybytes(req.size)}</td>
+      <td class="size">${req.size === 0 ? '(cached)' : prettybytes(req.size)}</td>
       <td class="url">${req.url}</td>
       <td class="duration">(${req.duration.toFixed(1)}ms)</td>
     </tr>
