@@ -2,16 +2,14 @@
 @import './media.scss';
 
 tbody#requests {
-  @media screen and (max-width: $small-screen-max) {
-    display: none;
-  }
-
   user-select: none;
   cursor: default;
 
   position: absolute;
-  left: 7%;
   top: 5%;
+  left: 50%;
+  width: 80vw;
+  margin-left: -40vw;
 
   font-family: monospace;
   font-weight: 200;
@@ -29,18 +27,31 @@ tr.request {
 }
 
 td.size {
+  @media screen and (max-width: $small-screen-max) {
+    display: none;
+  }
+
   width: 20%;
   text-align: center;
 }
 
 td.url {
-  width: 50vw;
+  @media screen and (max-width: $small-screen-max) {
+    max-width: 80vw;
+    width: 80vw;
+  }
+
+  width: 100%;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 td.duration {
+  @media screen and (max-width: $small-screen-max) {
+    display: none;
+  }
+  
   width: 20%;
   text-align: center;
 }
