@@ -6,6 +6,7 @@ $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achro
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
 $bg-colour: none;
+$text-colour: none;
 
 body {
   @each $theme in $themes {
@@ -13,6 +14,7 @@ body {
       @each $colourblindness in $colourblind-options {
         .#{$colourblindness} {
           $bg-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary') !global;
+          $text-colour: map-get($colours, '#{$theme}-#{$colourblindness}-primary') !global;
         }
       }
     }
@@ -21,4 +23,5 @@ body {
 
 body {
   background-color: $bg-colour;
+  color: $text-colour;
 }
