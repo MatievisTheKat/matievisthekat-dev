@@ -1,17 +1,37 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   @media screen and (max-width: $small-screen-max) {
- *   |                                 ^^^^^^^^^^^^^^^^^
- *   '
- *   sass/requests.scss 2:33  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    @media screen and (max-width: $small-screen-max) {\a   \2502                                  ^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/requests.scss 2:33  root stylesheet";
+tbody#requests {
+  cursor: default;
+  position: absolute;
+  left: 3rem;
+  top: 10rem;
+  font-family: monospace;
+  color: #636363;
+  border-collapse: collapse;
 }
+@media screen and (max-width: 680px) {
+  tbody#requests {
+    display: none;
+  }
+}
+
+tr#total {
+  border-top: 1px solid #b9b9b9;
+}
+
+td.size {
+  width: 20%;
+  text-align: center;
+}
+
+td.url {
+  width: 50%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td.duration {
+  width: 20%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=requests.css.map */

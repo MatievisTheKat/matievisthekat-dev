@@ -1,5 +1,9 @@
+@import './media.scss';
+
 #intro {
   @media screen and (max-width: $small-screen-max) {
     text-align: center;
   }
+
+  margin-left: 5%;
 }
