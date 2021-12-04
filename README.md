@@ -26,8 +26,7 @@
 - `~/img` all images used in the site
   - `/favicon.png` site favicon
   - `/me.png` the same as `favicon.png` but square
-- `~/css` (mostly) auto-generated from `~/sass`
-  - `/**/*.min.css` non auto-generated css files
+- `~/css` auto-generated from `~/sass`
   - `/**/*.css` auto-generated css files
   - `/**/*.css.map` auto-generated css sourcemaps
 - `~/sass` Syntactically Awesome StyleSheets
@@ -44,7 +43,12 @@
   - `/**/*.js` auto-generated js files
   - `/**/*.js.map` auto-generated js sourcemaps
 - `~/ts`
-  - `/**/*.ts` typescript source files
+  - `/common` code available to any other files
+    - `/*.ts` typescript source files
+  - `/components` code for specific components
+    - `/*.ts` typescript source files
+  - `/pages` code for specific pages
+    - `/*.ts` typescript source files
 - `~/**/*.html` source html for site pages
 - `~/.prettierrc` Prettier formatting configuration
 - `~/tsconfig.json` typescript compiler configuration
