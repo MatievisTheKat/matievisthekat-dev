@@ -5,7 +5,7 @@ $themes: 'light'; //, 'dark' , 'solarized';
 $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
-$bg-colour: map-get($colours, 'light-none-secondary');
+$bg-colour: none;
 
 body {
   @each $theme in $themes {
