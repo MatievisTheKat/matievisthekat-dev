@@ -1,1 +1,10 @@
-@font-face{font-family:"Raleway";font-style:normal;font-weight:400;src:url(/fonts/raleway/Raleway-VariableFont_wght.ttf) format("truetype")}/*# sourceMappingURL=fonts.css.map */
+/* cyrillic-ext */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/raleway/Raleway.eot");
+  src: url("/fonts/raleway/Raleway.eot?#iefix") format("embedded-opentype"), url("/fonts/raleway/Raleway.woff2") format("woff2"), url("/fonts/raleway/Raleway.woff") format("woff"), url("/fonts/raleway/Raleway.ttf") format("truetype"), url("/fonts/raleway/Raleway.svg#Raleway") format("svg");
+}
+
+/*# sourceMappingURL=fonts.css.map */
