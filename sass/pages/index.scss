@@ -1,4 +1,4 @@
-@import './media.scss';
+@import '../common/media.scss';
 
 #intro {
   @media screen and (max-width: $small-screen-max) {

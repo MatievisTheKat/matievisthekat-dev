@@ -31,8 +31,15 @@
   - `/**/*.css` auto-generated css files
   - `/**/*.css.map` auto-generated css sourcemaps
 - `~/sass` Syntactically Awesome StyleSheets
-  - `/**/*.scss` scss formatted sass styles
-  - `/**/*.sass` sass formatted styles
+  - `/common` styles available to any other file
+    - `/*.scss` scss formatted sass styles
+    - `/*.sass` sass formatted styles
+  - `/components` styles for specific components
+    - `/**/*.scss` scss formatted sass styles
+    - `/**/*.sass` sass formatted styles
+  - `/pages` styles for specific pages
+    - `/**/*.scss` scss formatted sass styles
+    - `/**/*.sass` sass formatted styles
 - `~/js` auto-generated from `~/ts`
   - `/**/*.js` auto-generated js files
   - `/**/*.js.map` auto-generated js sourcemaps
