@@ -1,10 +1,1 @@
-#intro {
-  margin-left: 5%;
-}
-@media screen and (max-width: 680px) {
-  #intro {
-    text-align: center;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+@media screen and (max-width: 680px){#intro{text-align:center}}@media screen and (min-width: 680px){#intro{text-align:left;margin-left:5%}}/*# sourceMappingURL=index.css.map */
