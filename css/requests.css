@@ -1,10 +1,12 @@
 tbody#requests {
+  user-select: none;
   cursor: default;
   position: absolute;
   left: 7%;
   top: 15%;
   font-family: monospace;
-  color: #3f4642;
+  font-weight: 200;
+  color: #bcbcb8;
   border-collapse: collapse;
 }
 @media screen and (max-width: 680px) {

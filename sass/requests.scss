@@ -6,6 +6,7 @@ tbody#requests {
     display: none;
   }
 
+  user-select: none;
   cursor: default;
 
   position: absolute;
@@ -13,7 +14,8 @@ tbody#requests {
   top: 15%;
 
   font-family: monospace;
-  color: lighten($text-colour, 10%);
+  font-weight: 200;
+  color: darken($bg-colour, 20%);
 
   border-collapse: collapse;
 }
