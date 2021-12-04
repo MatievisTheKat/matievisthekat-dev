@@ -1,3 +1,4 @@
+@import './vars.scss';
 @import './media.scss';
 
 tbody#requests {
@@ -12,7 +13,7 @@ tbody#requests {
   top: 15%;
 
   font-family: monospace;
-  color: rgb(99, 99, 99);
+  color: lighten($text-colour, 10%);
 
   border-collapse: collapse;
 }
