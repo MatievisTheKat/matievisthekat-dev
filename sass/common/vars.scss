@@ -5,24 +5,24 @@ $themes: 'light'; //, 'dark' , 'solarized';
 $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
-$primary-colour: none;
-$primary-2-colour: none;
-$primary-3-colour: none;
-$highlight-colour: none;
-$tertiary-colour: none;
-$secondary-colour: none;
+$primary: none;
+$primary2: none;
+$primary3: none;
+$highlight: none;
+$tertiary: none;
+$secondary: none;
 
 body {
   @each $theme in $themes {
     .#{$theme} {
       @each $colourblindness in $colourblind-options {
         .#{$colourblindness} {
-          $primary-colour: map-get($colours, '#{$theme}-#{$colourblindness}-primary') !global;
-          $primary-2-colour: map-get($colours, '#{$theme}-#{$colourblindness}-primary-2') !global;
-          $primary-3-colour: map-get($colours, '#{$theme}-#{$colourblindness}-primary-3') !global;
-          $highlight-colour: map-get($colours, '#{$theme}-#{$colourblindness}-highlight') !global;
-          $tertiary-colour: map-get($colours, '#{$theme}-#{$colourblindness}-tertiary') !global;
-          $secondary-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary') !global;
+          $primary: map-get($colours, '#{$theme}-#{$colourblindness}-primary') !global;
+          $primary2: map-get($colours, '#{$theme}-#{$colourblindness}-primary-2') !global;
+          $primary3: map-get($colours, '#{$theme}-#{$colourblindness}-primary-3') !global;
+          $highlight: map-get($colours, '#{$theme}-#{$colourblindness}-highlight') !global;
+          $tertiary: map-get($colours, '#{$theme}-#{$colourblindness}-tertiary') !global;
+          $secondary: map-get($colours, '#{$theme}-#{$colourblindness}-secondary') !global;
         }
       }
     }

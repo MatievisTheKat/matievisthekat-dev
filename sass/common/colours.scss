@@ -73,7 +73,7 @@ $light-achromatomaly-tertiary: hsl(16, 15%, 66%);
 $light-achromatomaly-secondary: hsl(60, 3%, 93%);
 
 // this map is here because sass doesnt let you referrence variables dynamically
-// i.e. $secondary-colour: $light-$option-secondary
+// i.e. $secondary: $light-$option-secondary
 $colours: (
   'light-none-primary': $light-none-primary,
   'light-none-primary-2': $light-none-primary-2,
