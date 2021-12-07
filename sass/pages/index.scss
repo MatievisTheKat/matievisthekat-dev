@@ -1,4 +1,9 @@
+@import '../common/vars.scss';
 @import '../common/media.scss';
+
+body {
+  background: conic-gradient(#{$secondary}, #{$primary3}, #{$primary2} 115deg, #{$primary2} 245deg, #{$primary3}, #{$secondary}) !important;
+}
 
 #intro {
   display: flex;
