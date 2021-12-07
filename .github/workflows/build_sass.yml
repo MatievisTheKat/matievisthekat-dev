@@ -34,7 +34,7 @@ jobs:
           git config --global user.name 'Github Actions'
           git pull
           git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m '[actions] Build css'
+          git diff --quiet && git diff --staged --quiet || git commit -m '[sass] build css'
       
       - name: Push origin master
         run: git push origin master
