@@ -1,12 +1,10 @@
-name: Build sass
+name: Build css
 
 on:
   workflow_dispatch:
   push:
     branches:
       - master
-    paths:
-      - 'sass/*'
 
 jobs:
   sass:
