@@ -1,5 +1,7 @@
 # my portfolio site i guess
 
+[![Build css](https://github.com/matievisthekat/matievisthekat.dev/actions/workflows/build_css.yml/badge.svg)](https://github.com/matievisthekat/matievisthekat.dev/actions/workflows/build_css.yml) [![Build js](https://github.com/matievisthekat/matievisthekat.dev/actions/workflows/build_js.yml/badge.svg)](https://github.com/matievisthekat/matievisthekat.dev/actions/workflows/build_js.yml)
+
 ### palettes
 
 | colourblindness |                                light                                 | dark | solarized |
