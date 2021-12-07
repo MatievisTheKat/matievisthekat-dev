@@ -40,6 +40,7 @@ jobs:
         run: git push origin master
 
   postcss:
+    needs: sass
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
