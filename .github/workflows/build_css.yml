@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'css/raw/**/*.css'
+      - 'sass/**/*.scss'
+      - 'sass/**/*.sass'
 
 jobs:
   sass:
