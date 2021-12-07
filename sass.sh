@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-tsc --watch
+sass sass:css
