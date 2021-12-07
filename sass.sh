@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-sass sass:css
+sass sass:css/raw --no-source-map
