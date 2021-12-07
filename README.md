@@ -27,8 +27,11 @@
   - `/favicon.png` site favicon
   - `/me.png` the same as `favicon.png` but square
 - `~/css` auto-generated from `~/sass`
-  - `/**/*.css` auto-generated css files
-  - `/**/*.css.map` auto-generated css sourcemaps
+  - `/raw` css parsed directly from sass. no optimization
+      - `/**/*.css` auto-generated css files
+  - `/prod` css parsed by postcss. optimized
+      - `/**/*.css` auto-generated css files
+      - `/**/*.css.map` auto-generated css sourcemaps
 - `~/sass` Syntactically Awesome StyleSheets
   - `/common` styles available to any other file
     - `/*.scss` scss formatted sass styles
@@ -52,7 +55,7 @@
 - `~/**/*.html` source html for site pages
 - `~/.prettierrc` Prettier formatting configuration
 - `~/tsconfig.json` typescript compiler configuration
-- `~/sass_watch.sh` shortcut script to build sass in dev mode
-- `~/tsc_watch.sh` shortcut script to build ts in dev mode
+- `~/sass.sh` shortcut script to build sass
+- `~/postcss.sh` shortcut script to build css for production use
 - `~/CNAME` CNAME DNS record for GitHub Pages
 - `~/README.md` this file
