@@ -4,9 +4,9 @@ interface CustomRequest {
   size: number;
 }
 
-const tableBody = document.querySelector('tbody#requests');
+const tbody = document.querySelector('tbody#requests');
 
-if (tableBody) {
+if (tbody) {
   let entries = performance.getEntriesByType('resource');
 
   const setTotals = (entries: PerformanceEntryList) => {
@@ -14,10 +14,10 @@ if (tableBody) {
     const url = window.location.pathname;
     const duration = (entries.reduce((acc, e) => acc + e.duration, 0) / 1000).toFixed(1);
 
-    const total = tableBody.querySelector('tr#total');
+    const total = tbody.querySelector('tr#total');
     if (total) total.remove();
 
-    tableBody.innerHTML += `
+    tbody.innerHTML += `
     <tr id="total">
       <td class="size">${size}</td>
       <td class="url">${url}</td>
@@ -27,7 +27,7 @@ if (tableBody) {
   };
 
   const addRequest = (req: CustomRequest, fade = false) => {
-    tableBody.innerHTML += `
+    tbody.innerHTML += `
     <tr class="request ${fade ? 'animate__animated animate__fadeInDown' : ''}">
       <td class="size">${req.size === 0 ? '(cached)' : prettybytes(req.size)}</td>
       <td class="url">${req.url}</td>
@@ -46,7 +46,7 @@ if (tableBody) {
   setTotals(entries);
 
   setInterval(() => {
-    const requests = tableBody.querySelectorAll('tr.request');
+    const requests = tbody.querySelectorAll('tr.request');
     if (requests) requests.forEach((r) => r.classList.remove('animate__animated', 'animate__fadeInDown'));
 
     const allEntries = performance.getEntriesByType('resource');
