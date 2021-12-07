@@ -5,16 +5,16 @@ $themes: 'light'; //, 'dark' , 'solarized';
 $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
 
-$bg-colour: none;
-$text-colour: none;
+$secondary-colour: none;
+$primary-colour: none;
 
 body {
   @each $theme in $themes {
     .#{$theme} {
       @each $colourblindness in $colourblind-options {
         .#{$colourblindness} {
-          $bg-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary') !global;
-          $text-colour: map-get($colours, '#{$theme}-#{$colourblindness}-primary') !global;
+          $secondary-colour: map-get($colours, '#{$theme}-#{$colourblindness}-secondary') !global;
+          $primary-colour: map-get($colours, '#{$theme}-#{$colourblindness}-primary') !global;
         }
       }
     }

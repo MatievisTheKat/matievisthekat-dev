@@ -13,7 +13,7 @@ tbody#requests {
 
   font-family: monospace;
   font-weight: 200;
-  color: darken($bg-colour, 20%);
+  color: darken($secondary-colour, 20%);
 
   border-collapse: collapse;
 
@@ -53,7 +53,7 @@ td.duration {
   @media screen and (max-width: $small-screen-max) {
     display: none;
   }
-  
+
   width: 20%;
   text-align: center;
 }
