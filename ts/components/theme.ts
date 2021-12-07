@@ -1,15 +1,3 @@
-type Theme = 'light' | 'dark' | 'solarized';
-type Colourblind =
-  | 'none'
-  | 'protanopia'
-  | 'dueteranopia'
-  | 'tritanopia'
-  | 'achromatopsia'
-  | 'protanomaly'
-  | 'deuteranomaly'
-  | 'tritanomaly'
-  | 'achromatomaly';
-
 const theme = (window.localStorage.getItem('theme') || 'light') as Theme;
 const colourblind = (window.localStorage.getItem('colourblind') || 'none') as Colourblind;
 
