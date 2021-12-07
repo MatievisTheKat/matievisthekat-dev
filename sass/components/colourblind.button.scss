@@ -1,5 +1,25 @@
 @import '../common/vars.scss';
 
-button#colourblind {
-  background-color: $secondary;
+button.theme {
+  &:hover {
+    background-color: darken($secondary, 13%);
+    cursor: pointer;
+  }
+
+  transition: background-color 0.2s ease-in-out;
+  background-color: darken($secondary, 5%);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 15px #fff;
+
+  position: fixed;
+  top: 4%;
+
+  &#colourblind {
+    right: 3%;
+  }
+
+  &#theme {
+    right: 10%;
+  }
 }
