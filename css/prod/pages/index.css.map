@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../raw/pages/index.css"],"names":[],"mappings":"AAAA,OAGE,kBAAmB,CAFnB,YAAa,CAGb,qBAAsB,CACtB,UAAW,CAHX,sBAIF","file":"index.css","sourcesContent":["#intro {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  height: 75%;\n}\n"]}
