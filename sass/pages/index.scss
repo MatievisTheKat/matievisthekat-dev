@@ -1,18 +1,9 @@
 @import '../common/media.scss';
 
 #intro {
-  @media screen and (max-width: $small-screen-max) {
-    text-align: center;
-  }
-
-  @media screen and (min-width: $small-screen-max) {
-    text-align: left;
-    margin-left: 5%;
-    margin-right: 0;
-    width: 50%;
-  }
-
-  & > p {
-    animation-delay: 0.7s;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75%;
 }

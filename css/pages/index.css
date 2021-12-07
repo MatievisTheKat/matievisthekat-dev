@@ -1,1 +1,9 @@
-@media screen and (max-width: 680px){#intro{text-align:center}}@media screen and (min-width: 680px){#intro{text-align:left;margin-left:5%;margin-right:0;width:50%}}#intro>p{animation-delay:.7s}/*# sourceMappingURL=index.css.map */
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75%;
+}
+
+/*# sourceMappingURL=index.css.map */
