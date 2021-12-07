@@ -16,6 +16,8 @@ tbody#requests {
   color: darken($bg-colour, 20%);
 
   border-collapse: collapse;
+
+  z-index: -1;
 }
 
 tr#total {
