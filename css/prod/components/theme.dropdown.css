@@ -1,2 +1,2 @@
-div.theme-dropdown{height:40%;position:absolute;top:10%;width:15%}@media screen and (max-width:680px){div.theme-dropdown{height:90%;width:95%}}div.theme-dropdown#colourblind{right:5%}div.theme-dropdown#theme{right:12%}
+div.theme-dropdown{bottom:10%;display:flex;height:30%;position:absolute;width:15%}@media screen and (max-width:680px){div.theme-dropdown{height:90%;left:2%;right:2%;top:1%;width:95%}}div.theme-dropdown#colourblind{right:7%}div.theme-dropdown#theme{right:20%}
 /*# sourceMappingURL=theme.dropdown.css.map */
