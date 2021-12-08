@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(#e1e1df, #8a9e9d) !important;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75%;
+}
+
+/*# sourceMappingURL=index.css.map */
