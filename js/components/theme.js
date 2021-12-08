@@ -19,10 +19,13 @@ function toggleDropdown(mode) {
         }
         else {
             dropdown.querySelectorAll('ul > li').forEach((li) => {
+                const data = li.attributes.getNamedItem('data-value');
+                if (!data)
+                    return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
+                if (theme === data.value || colourblind === data.value) {
+                    li.classList.add('theme-selected');
+                }
                 li.addEventListener('click', () => {
-                    const data = li.attributes.getNamedItem('data-value');
-                    if (!data)
-                        return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
                     if (mode === 'theme') {
                         setTheme(data.value);
                     }

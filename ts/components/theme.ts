@@ -21,10 +21,14 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
       hideDropdown(mode);
     } else {
       dropdown.querySelectorAll<HTMLLIElement>('ul > li').forEach((li) => {
-        li.addEventListener('click', () => {
-          const data = li.attributes.getNamedItem('data-value');
-          if (!data) return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
+        const data = li.attributes.getNamedItem('data-value');
+        if (!data) return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
 
+        if (theme === (data.value as Theme) || colourblind === (data.value as Colourblind)) {
+          li.classList.add('theme-selected');
+        }
+
+        li.addEventListener('click', () => {
           if (mode === 'theme') {
             setTheme(data.value as Theme);
           } else {
