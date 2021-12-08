@@ -24,6 +24,9 @@ div.theme-dropdown {
   box-shadow: 0 6px 6px $primary2;
 
   animation: jackInTheBox 0.7s;
+  &.will-hide {
+    animation: backOutRight 0.6s;
+  }
 
   &#colourblind {
     right: 4%;

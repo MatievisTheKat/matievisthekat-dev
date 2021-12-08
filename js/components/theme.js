@@ -6,16 +6,32 @@ const colourblind = (window.localStorage.getItem('colourblind') || 'none');
 function toggleDropdown(mode) {
     const dropdown = document.querySelector(`div#${mode}.theme-dropdown`);
     if (dropdown) {
-        dropdown.classList.toggle('hide');
+        if (!dropdown.classList.contains('hide')) {
+            hideDropdown(mode);
+        }
+        else
+            dropdown.classList.remove('hide');
     }
     else
         console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
     const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
     const otherDropdown = document.querySelector(`div#${otherMode}.theme-dropdown`);
     if (otherDropdown) {
-        otherDropdown.classList.add('hide');
+        hideDropdown(otherMode);
     }
     else
         console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
+}
+function hideDropdown(mode) {
+    const dropdown = document.querySelector(`div#${mode}.theme-dropdown`);
+    if (dropdown) {
+        dropdown.classList.add('will-hide');
+        setTimeout(() => {
+            dropdown.classList.add('hide');
+            dropdown.classList.remove('will-hide');
+        }, 600);
+    }
+    else
+        console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }
 //# sourceMappingURL=theme.js.map

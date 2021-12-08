@@ -19,6 +19,9 @@ div.theme-dropdown {
     text-align: center;
   }
 }
+div.theme-dropdown.will-hide {
+  animation: backOutRight 0.6s;
+}
 div.theme-dropdown#colourblind {
   right: 4%;
 }
