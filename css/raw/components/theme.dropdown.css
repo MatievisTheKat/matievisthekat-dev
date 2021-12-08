@@ -17,10 +17,10 @@ div.theme-dropdown {
   }
 }
 div.theme-dropdown#colourblind {
-  right: 7%;
+  right: 2%;
 }
 div.theme-dropdown#theme {
-  right: 20%;
+  right: 9%;
 }
 div.theme-dropdown > ul {
   list-style: none;
