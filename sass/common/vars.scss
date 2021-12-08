@@ -1,6 +1,6 @@
 @import './colours.scss';
 
-$themes: 'light'; //, 'dark' , 'solarized';
+$themes: 'light', 'dark';// , 'solarized';
 
 $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';

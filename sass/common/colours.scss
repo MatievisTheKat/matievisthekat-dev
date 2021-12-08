@@ -1,6 +1,6 @@
 $sass-branding-colour: #c69;
 
-// light -> primary
+// light -> none
 $light-none-primary: hsl(153, 11%, 16%);
 $light-none-primary-2: hsl(173, 14%, 36%);
 $light-none-primary-3: hsl(177, 18%, 56%);
@@ -72,6 +72,78 @@ $light-achromatomaly-highlight: hsl(201, 12%, 49%);
 $light-achromatomaly-tertiary: hsl(16, 15%, 66%);
 $light-achromatomaly-secondary: hsl(60, 3%, 93%);
 
+// dark -> none
+$dark-none-primary: $light-none-primary;
+$dark-none-primary-2: $light-none-primary-2;
+$dark-none-primary-3: $light-none-primary-3;
+$dark-none-highlight: $light-none-highlight;
+$dark-none-tertiary: $light-none-tertiary;
+$dark-none-secondary: hsl(0, 0%, 0%);
+
+// dark -> protanopia
+$dark-protanopia-primary: $light-protanopia-primary;
+$dark-protanopia-primary-2: $light-protanopia-primary-2;
+$dark-protanopia-primary-3: $light-protanopia-primary-3;
+$dark-protanopia-highlight: $light-protanopia-highlight;
+$dark-protanopia-tertiary: $light-protanopia-tertiary;
+$dark-protanopia-secondary: $light-none-secondary;
+
+// dark -> deuteranopia
+$dark-deuteranopia-primary: $light-deuteranopia-primary;
+$dark-deuteranopia-primary-2: $light-deuteranopia-primary-2;
+$dark-deuteranopia-primary-3: $light-deuteranopia-primary-3;
+$dark-deuteranopia-highlight: $light-deuteranopia-highlight;
+$dark-deuteranopia-tertiary: $light-deuteranopia-tertiary;
+$dark-deuteranopia-secondary: $light-none-secondary;
+
+// dark -> tritanopia
+$dark-tritanopia-primary: $light-tritanopia-primary;
+$dark-tritanopia-primary-2: $light-tritanopia-primary-2;
+$dark-tritanopia-primary-3: $light-tritanopia-primary-3;
+$dark-tritanopia-highlight: $light-tritanopia-highlight;
+$dark-tritanopia-tertiary: $light-tritanopia-tertiary;
+$dark-tritanopia-secondary: $light-none-secondary;
+
+// dark -> achromatopsia
+$dark-achromatopsia-primary: $light-achromatopsia-primary;
+$dark-achromatopsia-primary-2: $light-achromatopsia-primary-2;
+$dark-achromatopsia-primary-3: $light-achromatopsia-primary-3;
+$dark-achromatopsia-highlight: $light-achromatopsia-highlight;
+$dark-achromatopsia-tertiary: $light-achromatopsia-tertiary;
+$dark-achromatopsia-secondary: $light-none-secondary;
+
+// dark -> protanomaly
+$dark-protanomaly-primary: $light-protanomaly-primary;
+$dark-protanomaly-primary-2: $light-protanomaly-primary-2;
+$dark-protanomaly-primary-3: $light-protanomaly-primary-3;
+$dark-protanomaly-highlight: $light-protanomaly-highlight;
+$dark-protanomaly-tertiary: $light-protanomaly-tertiary;
+$dark-protanomaly-secondary: $light-none-secondary;
+
+// dark -> deuteranomaly
+$dark-deuteranomaly-primary: $light-deuteranomaly-primary;
+$dark-deuteranomaly-primary-2: $light-deuteranomaly-primary-2;
+$dark-deuteranomaly-primary-3: $light-deuteranomaly-primary-3;
+$dark-deuteranomaly-highlight: $light-deuteranomaly-highlight;
+$dark-deuteranomaly-tertiary: $light-deuteranomaly-tertiary;
+$dark-deuteranomaly-secondary: $light-none-secondary;
+
+// dark -> tritanomaly
+$dark-tritanomaly-primary: $light-tritanomaly-primary;
+$dark-tritanomaly-primary-2: $light-tritanomaly-primary-2;
+$dark-tritanomaly-primary-3: $light-tritanomaly-primary-3;
+$dark-tritanomaly-highlight: $light-tritanomaly-highlight;
+$dark-tritanomaly-tertiary: $light-tritanomaly-tertiary;
+$dark-tritanomaly-secondary: $light-none-secondary;
+
+// dark -> achromatomaly
+$dark-achromatomaly-primary: $light-achromatomaly-primary;
+$dark-achromatomaly-primary-2: $light-achromatomaly-primary-2;
+$dark-achromatomaly-primary-3: $light-achromatomaly-primary-3;
+$dark-achromatomaly-highlight: $light-achromatomaly-highlight;
+$dark-achromatomaly-tertiary: $light-achromatomaly-tertiary;
+$dark-achromatomaly-secondary: $light-achromatomaly-secondary;
+
 // this map is here because sass doesnt let you referrence variables dynamically
 // i.e. $secondary: $light-$option-secondary
 $colours: (
@@ -129,4 +201,58 @@ $colours: (
   'light-achromatomaly-highlight': $light-achromatomaly-highlight,
   'light-achromatomaly-tertiary': $light-achromatomaly-tertiary,
   'light-achromatomaly-secondary': $light-achromatomaly-secondary,
+  'dark-none-primary': $dark-none-primary,
+  'dark-none-primary-2': $dark-none-primary-2,
+  'dark-none-primary-3': $dark-none-primary-3,
+  'dark-none-highlight': $dark-none-highlight,
+  'dark-none-tertiary': $dark-none-tertiary,
+  'dark-none-secondary': $dark-none-secondary,
+  'dark-protanopia-primary': $dark-protanopia-primary,
+  'dark-protanopia-primary-2': $dark-protanopia-primary-2,
+  'dark-protanopia-primary-3': $dark-protanopia-primary-3,
+  'dark-protanopia-highlight': $dark-protanopia-highlight,
+  'dark-protanopia-tertiary': $dark-protanopia-tertiary,
+  'dark-protanopia-secondary': $dark-protanopia-secondary,
+  'dark-deuteranopia-primary': $dark-deuteranopia-primary,
+  'dark-deuteranopia-primary-2': $dark-deuteranopia-primary-2,
+  'dark-deuteranopia-primary-3': $dark-deuteranopia-primary-3,
+  'dark-deuteranopia-highlight': $dark-deuteranopia-highlight,
+  'dark-deuteranopia-tertiary': $dark-deuteranopia-tertiary,
+  'dark-deuteranopia-secondary': $dark-deuteranopia-secondary,
+  'dark-tritanopia-primary': $dark-tritanopia-primary,
+  'dark-tritanopia-primary-2': $dark-tritanopia-primary-2,
+  'dark-tritanopia-primary-3': $dark-tritanopia-primary-3,
+  'dark-tritanopia-highlight': $dark-tritanopia-highlight,
+  'dark-tritanopia-tertiary': $dark-tritanopia-tertiary,
+  'dark-tritanopia-secondary': $dark-tritanopia-secondary,
+  'dark-achromatopsia-primary': $dark-achromatopsia-primary,
+  'dark-achromatopsia-primary-2': $dark-achromatopsia-primary-2,
+  'dark-achromatopsia-primary-3': $dark-achromatopsia-primary-3,
+  'dark-achromatopsia-highlight': $dark-achromatopsia-highlight,
+  'dark-achromatopsia-tertiary': $dark-achromatopsia-tertiary,
+  'dark-achromatopsia-secondary': $dark-achromatopsia-secondary,
+  'dark-protanomaly-primary': $dark-protanomaly-primary,
+  'dark-protanomaly-primary-2': $dark-protanomaly-primary-2,
+  'dark-protanomaly-primary-3': $dark-protanomaly-primary-3,
+  'dark-protanomaly-highlight': $dark-protanomaly-highlight,
+  'dark-protanomaly-tertiary': $dark-protanomaly-tertiary,
+  'dark-protanomaly-secondary': $dark-protanomaly-secondary,
+  'dark-deuteranomaly-primary': $dark-deuteranomaly-primary,
+  'dark-deuteranomaly-primary-2': $dark-deuteranomaly-primary-2,
+  'dark-deuteranomaly-primary-3': $dark-deuteranomaly-primary-3,
+  'dark-deuteranomaly-highlight': $dark-deuteranomaly-highlight,
+  'dark-deuteranomaly-tertiary': $dark-deuteranomaly-tertiary,
+  'dark-deuteranomaly-secondary': $dark-deuteranomaly-secondary,
+  'dark-tritanomaly-primary': $dark-tritanomaly-primary,
+  'dark-tritanomaly-primary-2': $dark-tritanomaly-primary-2,
+  'dark-tritanomaly-primary-3': $dark-tritanomaly-primary-3,
+  'dark-tritanomaly-highlight': $dark-tritanomaly-highlight,
+  'dark-tritanomaly-tertiary': $dark-tritanomaly-tertiary,
+  'dark-tritanomaly-secondary': $dark-tritanomaly-secondary,
+  'dark-achromatomaly-primary': $dark-achromatomaly-primary,
+  'dark-achromatomaly-primary-2': $dark-achromatomaly-primary-2,
+  'dark-achromatomaly-primary-3': $dark-achromatomaly-primary-3,
+  'dark-achromatomaly-highlight': $dark-achromatomaly-highlight,
+  'dark-achromatomaly-tertiary': $dark-achromatomaly-tertiary,
+  'dark-achromatomaly-secondary': $dark-achromatomaly-secondary,
 );
