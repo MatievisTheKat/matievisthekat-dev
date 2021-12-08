@@ -2,7 +2,7 @@
 @import '../common/media.scss';
 
 div.theme-dropdown {
-  @media screen and (max-width: $small-screen-max) {
+  @media screen and (max-width: $sm-screen-max) {
     width: 96%;
     height: 90%;
     bottom: 10%;
@@ -39,8 +39,8 @@ div.theme-dropdown {
     & > li {
       margin-left: 0;
       margin-right: 0;
-      margin-top: .5rem;
-      margin-bottom: .5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
       padding: 0.5rem 1rem;
     }
   }

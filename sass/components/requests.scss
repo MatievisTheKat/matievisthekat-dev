@@ -29,7 +29,7 @@ tr.request {
 }
 
 td.size {
-  @media screen and (max-width: $small-screen-max) {
+  @media screen and (max-width: $sm-screen-max) {
     display: none;
   }
 
@@ -38,7 +38,7 @@ td.size {
 }
 
 td.url {
-  @media screen and (max-width: $small-screen-max) {
+  @media screen and (max-width: $sm-screen-max) {
     max-width: 80vw;
     width: 80vw;
   }
@@ -50,7 +50,7 @@ td.url {
 }
 
 td.duration {
-  @media screen and (max-width: $small-screen-max) {
+  @media screen and (max-width: $sm-screen-max) {
     display: none;
   }
 
