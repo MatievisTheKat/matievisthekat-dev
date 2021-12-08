@@ -26,6 +26,6 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
     setTimeout(() => {
       dropdown.classList.add('hide');
       dropdown.classList.remove('will-hide');
-    }, 600); // this 600ms is defined at sass/components/theme.dropdown.scss@28
+    }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
   } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }

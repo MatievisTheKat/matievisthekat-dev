@@ -29,7 +29,7 @@ function hideDropdown(mode) {
         setTimeout(() => {
             dropdown.classList.add('hide');
             dropdown.classList.remove('will-hide');
-        }, 600);
+        }, 500);
     }
     else
         console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
