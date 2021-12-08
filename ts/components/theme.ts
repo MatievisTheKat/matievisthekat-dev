@@ -8,4 +8,10 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
   if (dropdown) {
     dropdown.classList.toggle('hide');
   } else console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
+
+  const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
+  const otherDropdown = document.querySelector(`div#${otherMode}.theme-dropdown`) as HTMLDivElement | null;
+  if (otherDropdown) {
+    otherDropdown.classList.add('hide');
+  } else console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
 }

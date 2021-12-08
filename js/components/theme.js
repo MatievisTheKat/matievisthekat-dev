@@ -10,5 +10,12 @@ function toggleDropdown(mode) {
     }
     else
         console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
+    const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
+    const otherDropdown = document.querySelector(`div#${otherMode}.theme-dropdown`);
+    if (otherDropdown) {
+        otherDropdown.classList.add('hide');
+    }
+    else
+        console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
 }
 //# sourceMappingURL=theme.js.map
