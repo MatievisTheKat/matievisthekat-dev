@@ -51,6 +51,7 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
     setTimeout(() => {
       dropdown.classList.remove('will-hide');
       dropdown.classList.add('hide');
+      // replaces dropdown with clone to remove all event listeners. not necessary, just because i dont like the idea of unneeded event listeners lying around
       const clone = dropdown.cloneNode(true) as HTMLDivElement;
       dropdown.parentElement?.replaceChild(clone, dropdown);
     }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
