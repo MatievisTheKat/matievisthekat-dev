@@ -1,0 +1,2 @@
+button.theme{background-color:#e1e1df;border:none;border-radius:5px;box-shadow:0 0 30px #fff;position:fixed;top:4%;transition:background-color .2s ease-in-out}button.theme:hover{background-color:#cececa;box-shadow:inset 0 0 3px 1px #eeeeed;cursor:pointer}button.theme#colourblind{right:3%}button.theme#theme{right:10%}
+/*# sourceMappingURL=theme.button.css.map */
