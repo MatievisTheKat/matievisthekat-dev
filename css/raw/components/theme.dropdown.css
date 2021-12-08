@@ -41,7 +41,12 @@ div.theme-dropdown > ul > li {
   border-radius: 7px;
   box-shadow: 0 3px 3px 3px #c9c9c5;
 }
+div.theme-dropdown > ul > li#selected {
+  box-shadow: 0 3px 3px 3px #aa958d;
+}
 div.theme-dropdown > ul > li:hover {
   cursor: pointer;
   box-shadow: 0 3px 3px 3px #b5a29b;
 }
+
+/*# sourceMappingURL=theme.dropdown.css.map */

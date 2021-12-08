@@ -50,6 +50,10 @@ div.theme-dropdown {
       border-radius: 7px;
       box-shadow: 0 3px 3px 3px darken($secondary, 15%);
 
+      &#selected {
+        box-shadow: 0 3px 3px 3px darken($tertiary, 5%);
+      }
+
       &:hover {
         cursor: pointer;
         box-shadow: 0 3px 3px 3px $tertiary;
