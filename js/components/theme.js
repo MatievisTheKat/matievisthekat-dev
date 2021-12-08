@@ -17,8 +17,22 @@ function toggleDropdown(mode) {
         if (!dropdown.classList.contains('hide')) {
             hideDropdown(mode);
         }
-        else
+        else {
+            dropdown.querySelectorAll('ul > li').forEach((li) => {
+                li.addEventListener('click', () => {
+                    const data = li.attributes.getNamedItem('data-value');
+                    if (!data)
+                        return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
+                    if (mode === 'theme') {
+                        setTheme(data.value);
+                    }
+                    else {
+                        setColourblind(data.value);
+                    }
+                });
+            });
             dropdown.classList.remove('hide');
+        }
     }
     else
         console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
@@ -35,11 +49,27 @@ function hideDropdown(mode) {
     if (dropdown) {
         dropdown.classList.add('will-hide');
         setTimeout(() => {
-            dropdown.classList.add('hide');
+            var _a;
             dropdown.classList.remove('will-hide');
+            dropdown.classList.add('hide');
+            const clone = dropdown.cloneNode(true);
+            (_a = dropdown.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(clone, dropdown);
         }, 500);
     }
     else
         console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
+}
+function setTheme(theme) {
+    var _a, _b;
+    (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.remove('light', 'dark', 'solarized');
+    (_b = document.querySelector('body')) === null || _b === void 0 ? void 0 : _b.classList.add(theme);
+    window.localStorage.setItem('theme', theme);
+}
+function setColourblind(cb) {
+    var _a, _b;
+    (_a = document
+        .querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.remove('none', 'protanopia', 'dueteranopia', 'tritanopia', 'achromatopsia', 'protanomaly', 'deuteranomaly', 'tritanomaly', 'achromatomaly');
+    (_b = document.querySelector('body')) === null || _b === void 0 ? void 0 : _b.classList.add(cb);
+    window.localStorage.setItem('colourblind', cb);
 }
 //# sourceMappingURL=theme.js.map

@@ -19,7 +19,21 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
   if (dropdown) {
     if (!dropdown.classList.contains('hide')) {
       hideDropdown(mode);
-    } else dropdown.classList.remove('hide');
+    } else {
+      dropdown.querySelectorAll<HTMLLIElement>('ul > li').forEach((li) => {
+        li.addEventListener('click', () => {
+          const data = li.attributes.getNamedItem('data-value');
+          if (!data) return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
+
+          if (mode === 'theme') {
+            setTheme(data.value as Theme);
+          } else {
+            setColourblind(data.value as Colourblind);
+          }
+        });
+      });
+      dropdown.classList.remove('hide');
+    }
   } else console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
 
   const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
@@ -35,8 +49,10 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
     // this timout only hides the dropdown after the animation is done
     dropdown.classList.add('will-hide');
     setTimeout(() => {
-      dropdown.classList.add('hide');
       dropdown.classList.remove('will-hide');
+      dropdown.classList.add('hide');
+      const clone = dropdown.cloneNode(true) as HTMLDivElement;
+      dropdown.parentElement?.replaceChild(clone, dropdown);
     }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
   } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }
