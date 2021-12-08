@@ -4,11 +4,8 @@ let colourblind = (window.localStorage.getItem('colourblind') || 'none') as Colo
 document.querySelector('body')?.classList.add(colourblind, theme);
 
 window.addEventListener('click', (e) => {
-  if (
-    e.target &&
-    !(e.target as HTMLElement).classList.contains('theme-dropdown') &&
-    !(e.target as HTMLElement).classList.contains('theme')
-  ) {
+  const target = e.target as HTMLElement;
+  if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme')) {
     const mode = (e.target as HTMLElement).id;
     toggleDropdown(mode as 'colourblind' | 'theme');
   }

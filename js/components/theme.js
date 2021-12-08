@@ -4,9 +4,8 @@ let theme = (window.localStorage.getItem('theme') || 'light');
 let colourblind = (window.localStorage.getItem('colourblind') || 'none');
 (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.add(colourblind, theme);
 window.addEventListener('click', (e) => {
-    if (e.target &&
-        !e.target.classList.contains('theme-dropdown') &&
-        !e.target.classList.contains('theme')) {
+    const target = e.target;
+    if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme')) {
         const mode = e.target.id;
         toggleDropdown(mode);
     }
