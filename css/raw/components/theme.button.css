@@ -12,8 +12,10 @@ button.theme:hover {
   cursor: pointer;
 }
 button.theme#colourblind {
-  right: 3%;
+  right: 4rem;
 }
 button.theme#theme {
-  right: 10%;
+  right: 8rem;
 }
+
+/*# sourceMappingURL=theme.button.css.map */
