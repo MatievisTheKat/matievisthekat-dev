@@ -8,6 +8,7 @@ div.theme-dropdown {
   background-color: #d5d5d2;
   border-radius: 10px;
   box-shadow: 0 6px 6px #596463;
+  animation: fadeIn 0.3s;
 }
 @media screen and (max-width: 680px) {
   div.theme-dropdown {
