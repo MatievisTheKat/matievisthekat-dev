@@ -3,6 +3,7 @@
 button.theme {
   &:hover {
     background-color: darken($secondary, 13%);
+    box-shadow: inset 0 0 3px 1px $secondary;
     cursor: pointer;
   }
 
@@ -10,7 +11,7 @@ button.theme {
   background-color: darken($secondary, 5%);
   border-radius: 5px;
   border: none;
-  box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 30px #fff;
 
   position: fixed;
   top: 4%;
