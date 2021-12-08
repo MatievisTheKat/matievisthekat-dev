@@ -3,20 +3,23 @@
 
 div.theme-dropdown {
   @media screen and (max-width: $small-screen-max) {
-    width: 95%;
+    width: 100%;
     height: 90%;
-    top: 1%;
-    left: 2%;
-    right: 2%;
+    bottom: 10%;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   width: 15%;
-  height: 30%;
 
   position: absolute;
   bottom: 10%;
 
   display: flex;
+
+  background-color: darken($secondary, 10%);
+  border-radius: 10px;
+  box-shadow: 0 6px 6px $primary2;
 
   &#colourblind {
     right: 7%;
@@ -24,5 +27,13 @@ div.theme-dropdown {
 
   &#theme {
     right: 20%;
+  }
+
+  & > ul {
+    list-style: none;
+
+    & > li {
+      margin: 1rem 0;
+    }
   }
 }
