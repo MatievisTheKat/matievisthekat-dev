@@ -40,3 +40,29 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
     }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
   } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }
+
+function setTheme(theme: Theme) {
+  document.querySelector('body')?.classList.remove('light', 'dark', 'solarized');
+
+  document.querySelector('body')?.classList.add(theme);
+  window.localStorage.setItem('theme', theme);
+}
+
+function setColourblind(cb: Colourblind) {
+  document
+    .querySelector('body')
+    ?.classList.remove(
+      'none',
+      'protanopia',
+      'dueteranopia',
+      'tritanopia',
+      'achromatopsia',
+      'protanomaly',
+      'deuteranomaly',
+      'tritanomaly',
+      'achromatomaly'
+    );
+
+  document.querySelector('body')?.classList.add(cb);
+  window.localStorage.setItem('colourblind', cb);
+}
