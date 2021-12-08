@@ -15,15 +15,15 @@ div.theme-dropdown {
     width: 96%;
     height: 90%;
     bottom: 10%;
-    right: 2% !important;
+    right: 4% !important;
     text-align: center;
   }
 }
 div.theme-dropdown#colourblind {
-  right: 2%;
+  right: 4%;
 }
 div.theme-dropdown#theme {
-  right: 9%;
+  right: 11%;
 }
 div.theme-dropdown > ul {
   list-style: none;
