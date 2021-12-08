@@ -6,8 +6,8 @@ document.querySelector('body')?.classList.add(colourblind, theme);
 window.addEventListener('click', (e) => {
   const target = e.target as HTMLElement;
   if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme')) {
-    const mode = (e.target as HTMLElement).id;
-    toggleDropdown(mode as 'colourblind' | 'theme');
+    hideDropdown('theme');
+    hideDropdown('colourblind');
   }
 });
 

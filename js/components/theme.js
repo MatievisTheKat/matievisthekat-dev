@@ -6,8 +6,8 @@ let colourblind = (window.localStorage.getItem('colourblind') || 'none');
 window.addEventListener('click', (e) => {
     const target = e.target;
     if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme')) {
-        const mode = e.target.id;
-        toggleDropdown(mode);
+        hideDropdown('theme');
+        hideDropdown('colourblind');
     }
 });
 function toggleDropdown(mode) {
