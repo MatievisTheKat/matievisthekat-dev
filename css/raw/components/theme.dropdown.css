@@ -30,9 +30,16 @@ div.theme-dropdown > ul {
   padding-inline-start: 0;
 }
 div.theme-dropdown > ul > li {
+  transition: box-shadow 0.2s ease-in-out;
   margin: 0.5rem 0;
   padding: 0.5rem 1rem;
   background-color: #e1e1df;
+  border-radius: 7px;
+  box-shadow: 0 3px 3px 3px #c9c9c5;
+}
+div.theme-dropdown > ul > li:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 3px 3px #b5a29b;
 }
 
 /*# sourceMappingURL=theme.dropdown.css.map */
