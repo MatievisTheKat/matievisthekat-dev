@@ -1,0 +1,23 @@
+@import '../common/vars.scss';
+@import '../common/media.scss';
+
+div.theme-dropdown {
+  @media screen and (max-width: $small-screen-max) {
+    width: 95%;
+    height: 90%;
+  }
+
+  width: 15%;
+  height: 40%;
+
+  position: absolute;
+  top: 10%;
+
+  &#colourblind {
+    right: 5%;
+  }
+
+  &#theme {
+    right: 12%;
+  }
+}
