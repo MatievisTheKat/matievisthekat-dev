@@ -12,10 +12,10 @@ div.theme-dropdown {
 }
 @media screen and (max-width: 680px) {
   div.theme-dropdown {
-    width: 96%;
+    width: 90%;
     height: 90%;
     bottom: 10%;
-    right: 4% !important;
+    right: 5% !important;
     text-align: center;
   }
 }
