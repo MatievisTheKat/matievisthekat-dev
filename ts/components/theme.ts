@@ -3,6 +3,17 @@ const colourblind = (window.localStorage.getItem('colourblind') || 'none') as Co
 
 document.querySelector('body')?.classList.add(colourblind, theme);
 
+window.addEventListener('click', (e) => {
+  if (
+    e.target &&
+    !(e.target as HTMLElement).classList.contains('theme-dropdown') &&
+    !(e.target as HTMLElement).classList.contains('theme')
+  ) {
+    const mode = (e.target as HTMLElement).id;
+    toggleDropdown(mode as 'colourblind' | 'theme');
+  }
+});
+
 function toggleDropdown(mode: 'colourblind' | 'theme') {
   const dropdown = document.querySelector(`div#${mode}.theme-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
