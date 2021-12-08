@@ -1,5 +1,5 @@
 body {
-  background: conic-gradient(#eeeeed, #8a9e9d, #596463 115deg, #596463 245deg, #8a9e9d, #eeeeed) !important;
+  background: linear-gradient(#e1e1df, #8a9e9d) !important;
 }
 
 #intro {
