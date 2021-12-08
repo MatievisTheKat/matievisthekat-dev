@@ -1,8 +1,8 @@
 @import './vars.scss';
 
 body {
-  background-color: $secondary;
-  color: $primary;
+  background-color: var(--secondary);
+  color: var(--primary);
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }

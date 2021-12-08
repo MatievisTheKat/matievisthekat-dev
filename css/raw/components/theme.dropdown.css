@@ -1,3 +1,148 @@
+body .light .none {
+  --primary: map-get($colours, "light-none-primary");
+  --primary2: map-get($colours, "light-none-primary-2");
+  --primary3: map-get($colours, "light-none-primary-3");
+  --highlight: map-get($colours, "light-none-highlight");
+  --tertiary: map-get($colours, "light-none-tertiary");
+  --secondary: map-get($colours, "light-none-secondary");
+}
+body .light .protanopia {
+  --primary: map-get($colours, "light-protanopia-primary");
+  --primary2: map-get($colours, "light-protanopia-primary-2");
+  --primary3: map-get($colours, "light-protanopia-primary-3");
+  --highlight: map-get($colours, "light-protanopia-highlight");
+  --tertiary: map-get($colours, "light-protanopia-tertiary");
+  --secondary: map-get($colours, "light-protanopia-secondary");
+}
+body .light .deuteranopia {
+  --primary: map-get($colours, "light-deuteranopia-primary");
+  --primary2: map-get($colours, "light-deuteranopia-primary-2");
+  --primary3: map-get($colours, "light-deuteranopia-primary-3");
+  --highlight: map-get($colours, "light-deuteranopia-highlight");
+  --tertiary: map-get($colours, "light-deuteranopia-tertiary");
+  --secondary: map-get($colours, "light-deuteranopia-secondary");
+}
+body .light .tritanopia {
+  --primary: map-get($colours, "light-tritanopia-primary");
+  --primary2: map-get($colours, "light-tritanopia-primary-2");
+  --primary3: map-get($colours, "light-tritanopia-primary-3");
+  --highlight: map-get($colours, "light-tritanopia-highlight");
+  --tertiary: map-get($colours, "light-tritanopia-tertiary");
+  --secondary: map-get($colours, "light-tritanopia-secondary");
+}
+body .light .achromatopsia {
+  --primary: map-get($colours, "light-achromatopsia-primary");
+  --primary2: map-get($colours, "light-achromatopsia-primary-2");
+  --primary3: map-get($colours, "light-achromatopsia-primary-3");
+  --highlight: map-get($colours, "light-achromatopsia-highlight");
+  --tertiary: map-get($colours, "light-achromatopsia-tertiary");
+  --secondary: map-get($colours, "light-achromatopsia-secondary");
+}
+body .light .protanomaly {
+  --primary: map-get($colours, "light-protanomaly-primary");
+  --primary2: map-get($colours, "light-protanomaly-primary-2");
+  --primary3: map-get($colours, "light-protanomaly-primary-3");
+  --highlight: map-get($colours, "light-protanomaly-highlight");
+  --tertiary: map-get($colours, "light-protanomaly-tertiary");
+  --secondary: map-get($colours, "light-protanomaly-secondary");
+}
+body .light .deuteranomaly {
+  --primary: map-get($colours, "light-deuteranomaly-primary");
+  --primary2: map-get($colours, "light-deuteranomaly-primary-2");
+  --primary3: map-get($colours, "light-deuteranomaly-primary-3");
+  --highlight: map-get($colours, "light-deuteranomaly-highlight");
+  --tertiary: map-get($colours, "light-deuteranomaly-tertiary");
+  --secondary: map-get($colours, "light-deuteranomaly-secondary");
+}
+body .light .tritanomaly {
+  --primary: map-get($colours, "light-tritanomaly-primary");
+  --primary2: map-get($colours, "light-tritanomaly-primary-2");
+  --primary3: map-get($colours, "light-tritanomaly-primary-3");
+  --highlight: map-get($colours, "light-tritanomaly-highlight");
+  --tertiary: map-get($colours, "light-tritanomaly-tertiary");
+  --secondary: map-get($colours, "light-tritanomaly-secondary");
+}
+body .light .achromatomaly {
+  --primary: map-get($colours, "light-achromatomaly-primary");
+  --primary2: map-get($colours, "light-achromatomaly-primary-2");
+  --primary3: map-get($colours, "light-achromatomaly-primary-3");
+  --highlight: map-get($colours, "light-achromatomaly-highlight");
+  --tertiary: map-get($colours, "light-achromatomaly-tertiary");
+  --secondary: map-get($colours, "light-achromatomaly-secondary");
+}
+body .dark .none {
+  --primary: map-get($colours, "dark-none-primary");
+  --primary2: map-get($colours, "dark-none-primary-2");
+  --primary3: map-get($colours, "dark-none-primary-3");
+  --highlight: map-get($colours, "dark-none-highlight");
+  --tertiary: map-get($colours, "dark-none-tertiary");
+  --secondary: map-get($colours, "dark-none-secondary");
+}
+body .dark .protanopia {
+  --primary: map-get($colours, "dark-protanopia-primary");
+  --primary2: map-get($colours, "dark-protanopia-primary-2");
+  --primary3: map-get($colours, "dark-protanopia-primary-3");
+  --highlight: map-get($colours, "dark-protanopia-highlight");
+  --tertiary: map-get($colours, "dark-protanopia-tertiary");
+  --secondary: map-get($colours, "dark-protanopia-secondary");
+}
+body .dark .deuteranopia {
+  --primary: map-get($colours, "dark-deuteranopia-primary");
+  --primary2: map-get($colours, "dark-deuteranopia-primary-2");
+  --primary3: map-get($colours, "dark-deuteranopia-primary-3");
+  --highlight: map-get($colours, "dark-deuteranopia-highlight");
+  --tertiary: map-get($colours, "dark-deuteranopia-tertiary");
+  --secondary: map-get($colours, "dark-deuteranopia-secondary");
+}
+body .dark .tritanopia {
+  --primary: map-get($colours, "dark-tritanopia-primary");
+  --primary2: map-get($colours, "dark-tritanopia-primary-2");
+  --primary3: map-get($colours, "dark-tritanopia-primary-3");
+  --highlight: map-get($colours, "dark-tritanopia-highlight");
+  --tertiary: map-get($colours, "dark-tritanopia-tertiary");
+  --secondary: map-get($colours, "dark-tritanopia-secondary");
+}
+body .dark .achromatopsia {
+  --primary: map-get($colours, "dark-achromatopsia-primary");
+  --primary2: map-get($colours, "dark-achromatopsia-primary-2");
+  --primary3: map-get($colours, "dark-achromatopsia-primary-3");
+  --highlight: map-get($colours, "dark-achromatopsia-highlight");
+  --tertiary: map-get($colours, "dark-achromatopsia-tertiary");
+  --secondary: map-get($colours, "dark-achromatopsia-secondary");
+}
+body .dark .protanomaly {
+  --primary: map-get($colours, "dark-protanomaly-primary");
+  --primary2: map-get($colours, "dark-protanomaly-primary-2");
+  --primary3: map-get($colours, "dark-protanomaly-primary-3");
+  --highlight: map-get($colours, "dark-protanomaly-highlight");
+  --tertiary: map-get($colours, "dark-protanomaly-tertiary");
+  --secondary: map-get($colours, "dark-protanomaly-secondary");
+}
+body .dark .deuteranomaly {
+  --primary: map-get($colours, "dark-deuteranomaly-primary");
+  --primary2: map-get($colours, "dark-deuteranomaly-primary-2");
+  --primary3: map-get($colours, "dark-deuteranomaly-primary-3");
+  --highlight: map-get($colours, "dark-deuteranomaly-highlight");
+  --tertiary: map-get($colours, "dark-deuteranomaly-tertiary");
+  --secondary: map-get($colours, "dark-deuteranomaly-secondary");
+}
+body .dark .tritanomaly {
+  --primary: map-get($colours, "dark-tritanomaly-primary");
+  --primary2: map-get($colours, "dark-tritanomaly-primary-2");
+  --primary3: map-get($colours, "dark-tritanomaly-primary-3");
+  --highlight: map-get($colours, "dark-tritanomaly-highlight");
+  --tertiary: map-get($colours, "dark-tritanomaly-tertiary");
+  --secondary: map-get($colours, "dark-tritanomaly-secondary");
+}
+body .dark .achromatomaly {
+  --primary: map-get($colours, "dark-achromatomaly-primary");
+  --primary2: map-get($colours, "dark-achromatomaly-primary-2");
+  --primary3: map-get($colours, "dark-achromatomaly-primary-3");
+  --highlight: map-get($colours, "dark-achromatomaly-highlight");
+  --tertiary: map-get($colours, "dark-achromatomaly-tertiary");
+  --secondary: map-get($colours, "dark-achromatomaly-secondary");
+}
+
 div.theme-dropdown {
   width: 20%;
   position: absolute;
@@ -5,9 +150,9 @@ div.theme-dropdown {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #d5d5d2;
+  background-color: hsl(var(--secondary), 10%);
   border-radius: 10px;
-  box-shadow: 0 6px 6px #596463;
+  box-shadow: 0 6px 6px var(--primary) 2;
   animation: jackInTheBox 0.7s;
 }
 @media screen and (max-width: 680px) {
@@ -37,16 +182,16 @@ div.theme-dropdown > ul > li {
   transition: box-shadow 0.2s ease-in-out;
   margin: 0.5rem 0;
   padding: 0.5rem 1rem;
-  background-color: #e1e1df;
+  background-color: hsl(var(--secondary), 5%);
   border-radius: 7px;
-  box-shadow: 0 3px 3px 3px #c9c9c5;
+  box-shadow: 0 3px 3px 3px hsl(var(--secondary), 15%);
 }
 div.theme-dropdown > ul > li#selected {
-  box-shadow: 0 3px 3px 3px #aa958d;
+  box-shadow: 0 3px 3px 3px hsl(var(--tertiary), 5%);
 }
 div.theme-dropdown > ul > li:hover {
   cursor: pointer;
-  box-shadow: 0 3px 3px 3px #b5a29b;
+  box-shadow: 0 3px 3px 3px var(--tertiary);
 }
 
 /*# sourceMappingURL=theme.dropdown.css.map */

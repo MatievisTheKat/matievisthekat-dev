@@ -19,9 +19,9 @@ div.theme-dropdown {
   align-items: center;
   justify-content: center;
 
-  background-color: darken($secondary, 10%);
+  background-color: hsl(var(--secondary), 10%);
   border-radius: 10px;
-  box-shadow: 0 6px 6px $primary2;
+  box-shadow: 0 6px 6px var(--primary) 2;
 
   animation: jackInTheBox 0.7s;
   &.will-hide {
@@ -46,17 +46,17 @@ div.theme-dropdown {
 
       margin: 0.5rem 0;
       padding: 0.5rem 1rem;
-      background-color: darken($secondary, 5%);
+      background-color: hsl(var(--secondary), 5%);
       border-radius: 7px;
-      box-shadow: 0 3px 3px 3px darken($secondary, 15%);
+      box-shadow: 0 3px 3px 3px hsl(var(--secondary), 15%);
 
       &#selected {
-        box-shadow: 0 3px 3px 3px darken($tertiary, 5%);
+        box-shadow: 0 3px 3px 3px hsl(var(--tertiary), 5%);
       }
 
       &:hover {
         cursor: pointer;
-        box-shadow: 0 3px 3px 3px $tertiary;
+        box-shadow: 0 3px 3px 3px var(--tertiary);
       }
     }
   }

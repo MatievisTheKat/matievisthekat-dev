@@ -145,7 +145,7 @@ $dark-achromatomaly-tertiary: $light-achromatomaly-tertiary;
 $dark-achromatomaly-secondary: $light-achromatomaly-secondary;
 
 // this map is here because sass doesnt let you referrence variables dynamically
-// i.e. $secondary: $light-$option-secondary
+// i.e. var(--secondary): $light-$option-secondary
 $colours: (
   'light-none-primary': $light-none-primary,
   'light-none-primary-2': $light-none-primary-2,

@@ -2,7 +2,7 @@
 @import '../common/media.scss';
 
 body {
-  background: linear-gradient(darken($secondary, 5%), #{$primary3}) !important;
+  background: linear-gradient(hsl(var(--secondary), 5%), #{var(--primary) 3}) !important;
 }
 
 #intro {
