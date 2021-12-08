@@ -1,5 +1,5 @@
-const theme = (window.localStorage.getItem('theme') || 'light') as Theme;
-const colourblind = (window.localStorage.getItem('colourblind') || 'none') as Colourblind;
+let theme = (window.localStorage.getItem('theme') || 'light') as Theme;
+let colourblind = (window.localStorage.getItem('colourblind') || 'none') as Colourblind;
 
 document.querySelector('body')?.classList.add(colourblind, theme);
 
@@ -20,20 +20,29 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
     if (!dropdown.classList.contains('hide')) {
       hideDropdown(mode);
     } else {
-      dropdown.querySelectorAll<HTMLLIElement>('ul > li').forEach((li) => {
+      const items = dropdown.querySelectorAll<HTMLLIElement>('ul > li');
+      const checkSelected = () => {
+        items.forEach((li) => {
+          const data = li.attributes.getNamedItem('data-value');
+          if (!data) return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
+          if (theme === (data.value as Theme) || colourblind === (data.value as Colourblind)) {
+            li.id = 'selected';
+          } else li.id = '';
+        });
+      };
+      checkSelected();
+
+      items.forEach((li) => {
         const data = li.attributes.getNamedItem('data-value');
         if (!data) return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
-
-        if (theme === (data.value as Theme) || colourblind === (data.value as Colourblind)) {
-          li.classList.add('theme-selected');
-        }
-
         li.addEventListener('click', () => {
           if (mode === 'theme') {
             setTheme(data.value as Theme);
           } else {
             setColourblind(data.value as Colourblind);
           }
+
+          checkSelected();
         });
       });
       dropdown.classList.remove('hide');
@@ -62,11 +71,12 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
   } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }
 
-function setTheme(theme: Theme) {
+function setTheme(newTheme: Theme) {
   document.querySelector('body')?.classList.remove('light', 'dark', 'solarized');
 
-  document.querySelector('body')?.classList.add(theme);
-  window.localStorage.setItem('theme', theme);
+  document.querySelector('body')?.classList.add(newTheme);
+  window.localStorage.setItem('theme', newTheme);
+  theme = newTheme;
 }
 
 function setColourblind(cb: Colourblind) {
@@ -86,4 +96,5 @@ function setColourblind(cb: Colourblind) {
 
   document.querySelector('body')?.classList.add(cb);
   window.localStorage.setItem('colourblind', cb);
+  colourblind = cb;
 }

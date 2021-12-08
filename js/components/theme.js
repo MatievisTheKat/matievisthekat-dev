@@ -1,7 +1,7 @@
 "use strict";
 var _a;
-const theme = (window.localStorage.getItem('theme') || 'light');
-const colourblind = (window.localStorage.getItem('colourblind') || 'none');
+let theme = (window.localStorage.getItem('theme') || 'light');
+let colourblind = (window.localStorage.getItem('colourblind') || 'none');
 (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.add(colourblind, theme);
 window.addEventListener('click', (e) => {
     if (e.target &&
@@ -18,13 +18,24 @@ function toggleDropdown(mode) {
             hideDropdown(mode);
         }
         else {
-            dropdown.querySelectorAll('ul > li').forEach((li) => {
+            const items = dropdown.querySelectorAll('ul > li');
+            const checkSelected = () => {
+                items.forEach((li) => {
+                    const data = li.attributes.getNamedItem('data-value');
+                    if (!data)
+                        return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
+                    if (theme === data.value || colourblind === data.value) {
+                        li.id = 'selected';
+                    }
+                    else
+                        li.id = '';
+                });
+            };
+            checkSelected();
+            items.forEach((li) => {
                 const data = li.attributes.getNamedItem('data-value');
                 if (!data)
                     return console.warn(`[toggleDropdown(${mode}) -> li] 'data-value' not found`);
-                if (theme === data.value || colourblind === data.value) {
-                    li.classList.add('theme-selected');
-                }
                 li.addEventListener('click', () => {
                     if (mode === 'theme') {
                         setTheme(data.value);
@@ -32,6 +43,7 @@ function toggleDropdown(mode) {
                     else {
                         setColourblind(data.value);
                     }
+                    checkSelected();
                 });
             });
             dropdown.classList.remove('hide');
@@ -62,11 +74,12 @@ function hideDropdown(mode) {
     else
         console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }
-function setTheme(theme) {
+function setTheme(newTheme) {
     var _a, _b;
     (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.remove('light', 'dark', 'solarized');
-    (_b = document.querySelector('body')) === null || _b === void 0 ? void 0 : _b.classList.add(theme);
-    window.localStorage.setItem('theme', theme);
+    (_b = document.querySelector('body')) === null || _b === void 0 ? void 0 : _b.classList.add(newTheme);
+    window.localStorage.setItem('theme', newTheme);
+    theme = newTheme;
 }
 function setColourblind(cb) {
     var _a, _b;
@@ -74,5 +87,6 @@ function setColourblind(cb) {
         .querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.remove('none', 'protanopia', 'dueteranopia', 'tritanopia', 'achromatopsia', 'protanomaly', 'deuteranomaly', 'tritanomaly', 'achromatomaly');
     (_b = document.querySelector('body')) === null || _b === void 0 ? void 0 : _b.classList.add(cb);
     window.localStorage.setItem('colourblind', cb);
+    colourblind = cb;
 }
 //# sourceMappingURL=theme.js.map
