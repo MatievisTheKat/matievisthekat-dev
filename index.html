@@ -32,11 +32,10 @@
     <script defer src="js/components/theme.js"></script>
     <script defer src="js/components/requests.js"></script>
     <script defer src="js/components/age.js"></script>
-    <script defer src="js/components/colourblind.js"></script>
     <script defer src="js/pages/index.js"></script>
   </head>
   <body>
-    <button class="theme" id="colourblind" itemscope itemtype="https://schema.org/ActivateAction">
+    <button class="theme" onclick="toggleDropdown('colourblind')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -56,9 +55,9 @@
         <circle cx="6.5" cy="16.5" r="3.5"></circle>
       </svg>
     </button>
-    <div id="colourblind-dropdown" class="theme-dropdown"></div>
+    <div id="colourblind" class="theme-dropdown"></div>
 
-    <button class="theme" id="theme" itemscope itemtype="https://schema.org/ActivateAction">
+    <button class="theme" onclick="toggleDropdown('theme')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -76,7 +75,7 @@
         <line x1="9.7" y1="17" x2="14.3" y2="17"></line>
       </svg>
     </button>
-    <div id="theme-dropdown" class="theme-dropdown"></div>
+    <div id="theme" class="theme-dropdown"></div>
 
     <div id="intro">
       <h1>matievisthekat.dev</h1>
