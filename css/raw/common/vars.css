@@ -4,6 +4,7 @@
   --primary2-hs: 173, 14%;
   --primary2-l: 36%;
   --primary3-hs: 177, 18%;
+  --primary3-l: 56%;
   --highlight-hs: 202, 27%;
   --highlight-l: 50%;
   --tertiary-hs: 14, 34%;
@@ -18,6 +19,7 @@ body .light .none {
   --primary2-hs: 173, 14%;
   --primary2-l: 36%;
   --primary3-hs: 177, 18%;
+  --primary3-l: 56%;
   --highlight-hs: 202, 27%;
   --highlight-l: 50%;
   --tertiary-hs: 14, 34%;
@@ -31,6 +33,7 @@ body .light .protanopia {
   --primary2-hs: 235, 6%;
   --primary2-l: 38%;
   --primary3-hs: 237, 11%;
+  --primary3-l: 59%;
   --highlight-hs: 239, 18%;
   --highlight-l: 52%;
   --tertiary-hs: 60, 19%;
@@ -44,6 +47,7 @@ body .light .deuteranopia {
   --primary2-hs: 248, 8%;
   --primary2-l: 37%;
   --primary3-hs: 247, 13%;
+  --primary3-l: 58%;
   --highlight-hs: 245, 19%;
   --highlight-l: 51%;
   --tertiary-hs: 64, 22%;
@@ -57,6 +61,7 @@ body .light .tritanopia {
   --primary2-hs: 180, 12%;
   --primary2-l: 36%;
   --primary3-hs: 180, 17%;
+  --primary3-l: 56%;
   --highlight-hs: 179, 22%;
   --highlight-l: 48%;
   --tertiary-hs: 0, 29%;
@@ -70,6 +75,7 @@ body .light .achromatopsia {
   --primary2-hs: 0, 0%;
   --primary2-l: 38%;
   --primary3-hs: 0, 0%;
+  --primary3-l: 59%;
   --highlight-hs: 0, 0%;
   --highlight-l: 49%;
   --tertiary-hs: 0, 0%;
@@ -83,6 +89,7 @@ body .light .protanomaly {
   --primary2-hs: 200, 10%;
   --primary2-l: 36%;
   --primary3-hs: 202, 15%;
+  --primary3-l: 57%;
   --highlight-hs: 218, 23%;
   --highlight-l: 50%;
   --tertiary-hs: 34, 27%;
@@ -96,6 +103,7 @@ body .light .deuteranomaly {
   --primary2-hs: 194, 9%;
   --primary2-l: 37%;
   --primary3-hs: 197, 14%;
+  --primary3-l: 57%;
   --highlight-hs: 215, 22%;
   --highlight-l: 51%;
   --tertiary-hs: 30, 27%;
@@ -109,6 +117,7 @@ body .light .tritanomaly {
   --primary2-hs: 175, 13%;
   --primary2-l: 36%;
   --primary3-hs: 178, 17%;
+  --primary3-l: 56%;
   --highlight-hs: 194, 25%;
   --highlight-l: 49%;
   --tertiary-hs: 9, 32%;
@@ -122,6 +131,7 @@ body .light .achromatomaly {
   --primary2-hs: 175, 6%;
   --primary2-l: 37%;
   --primary3-hs: 177, 9%;
+  --primary3-l: 58%;
   --highlight-hs: 201, 12%;
   --highlight-l: 49%;
   --tertiary-hs: 16, 15%;
@@ -135,6 +145,7 @@ body .dark .none {
   --primary2-hs: 173, 14%;
   --primary2-l: 36%;
   --primary3-hs: 177, 18%;
+  --primary3-l: 56%;
   --highlight-hs: 202, 27%;
   --highlight-l: 50%;
   --tertiary-hs: 14, 34%;
@@ -148,6 +159,7 @@ body .dark .protanopia {
   --primary2-hs: 235, 6%;
   --primary2-l: 38%;
   --primary3-hs: 237, 11%;
+  --primary3-l: 59%;
   --highlight-hs: 239, 18%;
   --highlight-l: 52%;
   --tertiary-hs: 60, 19%;
@@ -161,6 +173,7 @@ body .dark .deuteranopia {
   --primary2-hs: 248, 8%;
   --primary2-l: 37%;
   --primary3-hs: 247, 13%;
+  --primary3-l: 58%;
   --highlight-hs: 245, 19%;
   --highlight-l: 51%;
   --tertiary-hs: 64, 22%;
@@ -174,6 +187,7 @@ body .dark .tritanopia {
   --primary2-hs: 180, 12%;
   --primary2-l: 36%;
   --primary3-hs: 180, 17%;
+  --primary3-l: 56%;
   --highlight-hs: 179, 22%;
   --highlight-l: 48%;
   --tertiary-hs: 0, 29%;
@@ -187,6 +201,7 @@ body .dark .achromatopsia {
   --primary2-hs: 0, 0%;
   --primary2-l: 38%;
   --primary3-hs: 0, 0%;
+  --primary3-l: 59%;
   --highlight-hs: 0, 0%;
   --highlight-l: 49%;
   --tertiary-hs: 0, 0%;
@@ -200,6 +215,7 @@ body .dark .protanomaly {
   --primary2-hs: 200, 10%;
   --primary2-l: 36%;
   --primary3-hs: 202, 15%;
+  --primary3-l: 57%;
   --highlight-hs: 218, 23%;
   --highlight-l: 50%;
   --tertiary-hs: 34, 27%;
@@ -213,6 +229,7 @@ body .dark .deuteranomaly {
   --primary2-hs: 194, 9%;
   --primary2-l: 37%;
   --primary3-hs: 197, 14%;
+  --primary3-l: 57%;
   --highlight-hs: 215, 22%;
   --highlight-l: 51%;
   --tertiary-hs: 30, 27%;
@@ -226,6 +243,7 @@ body .dark .tritanomaly {
   --primary2-hs: 175, 13%;
   --primary2-l: 36%;
   --primary3-hs: 178, 17%;
+  --primary3-l: 56%;
   --highlight-hs: 194, 25%;
   --highlight-l: 49%;
   --tertiary-hs: 9, 32%;
@@ -239,6 +257,7 @@ body .dark .achromatomaly {
   --primary2-hs: 175, 6%;
   --primary2-l: 37%;
   --primary3-hs: 177, 9%;
+  --primary3-l: 58%;
   --highlight-hs: 201, 12%;
   --highlight-l: 49%;
   --tertiary-hs: 16, 15%;
