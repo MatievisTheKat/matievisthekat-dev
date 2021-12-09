@@ -13,7 +13,7 @@
   --secondary-l: 93%;
 }
 
-body .light .none {
+body.light.none {
   --primary-hs: 153, 11%;
   --primary-l: 16%;
   --primary2-hs: 173, 14%;
@@ -27,7 +27,7 @@ body .light .none {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .protanopia {
+body.light.protanopia {
   --primary-hs: 240, 3%;
   --primary-l: 16%;
   --primary2-hs: 235, 6%;
@@ -41,7 +41,7 @@ body .light .protanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .deuteranopia {
+body.light.deuteranopia {
   --primary-hs: 255, 5%;
   --primary-l: 16%;
   --primary2-hs: 248, 8%;
@@ -55,7 +55,7 @@ body .light .deuteranopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .tritanopia {
+body.light.tritanopia {
   --primary-hs: 180, 8%;
   --primary-l: 15%;
   --primary2-hs: 180, 12%;
@@ -69,7 +69,7 @@ body .light .tritanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .achromatopsia {
+body.light.achromatopsia {
   --primary-hs: 0, 0%;
   --primary-l: 16%;
   --primary2-hs: 0, 0%;
@@ -83,7 +83,7 @@ body .light .achromatopsia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .protanomaly {
+body.light.protanomaly {
   --primary-hs: 168, 6%;
   --primary-l: 15%;
   --primary2-hs: 200, 10%;
@@ -97,7 +97,7 @@ body .light .protanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .deuteranomaly {
+body.light.deuteranomaly {
   --primary-hs: 168, 6%;
   --primary-l: 15%;
   --primary2-hs: 194, 9%;
@@ -111,7 +111,7 @@ body .light .deuteranomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .tritanomaly {
+body.light.tritanomaly {
   --primary-hs: 163, 9%;
   --primary-l: 15%;
   --primary2-hs: 175, 13%;
@@ -125,7 +125,7 @@ body .light .tritanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body .light .achromatomaly {
+body.light.achromatomaly {
   --primary-hs: 150, 5%;
   --primary-l: 16%;
   --primary2-hs: 175, 6%;
@@ -139,7 +139,7 @@ body .light .achromatomaly {
   --secondary-hs: 60, 3%;
   --secondary-l: 93%;
 }
-body .dark .none {
+body.dark.none {
   --primary-hs: 240, 3%;
   --primary-l: 16%;
   --primary2-hs: 173, 14%;
@@ -153,7 +153,7 @@ body .dark .none {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .protanopia {
+body.dark.protanopia {
   --primary-hs: 240, 3%;
   --primary-l: 16%;
   --primary2-hs: 235, 6%;
@@ -167,7 +167,7 @@ body .dark .protanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .deuteranopia {
+body.dark.deuteranopia {
   --primary-hs: 255, 5%;
   --primary-l: 16%;
   --primary2-hs: 248, 8%;
@@ -181,7 +181,7 @@ body .dark .deuteranopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .tritanopia {
+body.dark.tritanopia {
   --primary-hs: 180, 8%;
   --primary-l: 15%;
   --primary2-hs: 180, 12%;
@@ -195,7 +195,7 @@ body .dark .tritanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .achromatopsia {
+body.dark.achromatopsia {
   --primary-hs: 0, 0%;
   --primary-l: 16%;
   --primary2-hs: 0, 0%;
@@ -209,7 +209,7 @@ body .dark .achromatopsia {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .protanomaly {
+body.dark.protanomaly {
   --primary-hs: 168, 6%;
   --primary-l: 15%;
   --primary2-hs: 200, 10%;
@@ -223,7 +223,7 @@ body .dark .protanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .deuteranomaly {
+body.dark.deuteranomaly {
   --primary-hs: 168, 6%;
   --primary-l: 15%;
   --primary2-hs: 194, 9%;
@@ -237,7 +237,7 @@ body .dark .deuteranomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .tritanomaly {
+body.dark.tritanomaly {
   --primary-hs: 163, 9%;
   --primary-l: 15%;
   --primary2-hs: 175, 13%;
@@ -251,7 +251,7 @@ body .dark .tritanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 0%;
 }
-body .dark .achromatomaly {
+body.dark.achromatomaly {
   --primary-hs: 150, 5%;
   --primary-l: 16%;
   --primary2-hs: 175, 6%;

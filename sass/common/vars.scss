@@ -24,9 +24,9 @@ $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achro
 
 body {
   @each $theme in $themes {
-    .#{$theme} {
+    &.#{$theme} {
       @each $colourblindness in $colourblind-options {
-        .#{$colourblindness} {
+        &.#{$colourblindness} {
           $theme-map: map-get($colours, $theme);
           $colourblind: map-get($theme-map, $colourblindness);
           --primary-hs: #{map-get($colourblind, 'primary-hs')};
