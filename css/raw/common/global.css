@@ -41,7 +41,7 @@ body.light.protanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
 }
-body.light.deuteranopia {
+body.light.dueteranopia {
   --primary-hs: 255, 5%;
   --primary-l: 16%;
   --primary2-hs: 248, 8%;
@@ -140,135 +140,135 @@ body.light.achromatomaly {
   --secondary-l: 93%;
 }
 body.dark.none {
-  --primary-hs: 240, 3%;
-  --primary-l: 16%;
+  --primary-hs: 152, 11%;
+  --primary-l: 51%;
   --primary2-hs: 173, 14%;
-  --primary2-l: 36%;
+  --primary2-l: 22%;
   --primary3-hs: 177, 18%;
-  --primary3-l: 56%;
-  --highlight-hs: 202, 27%;
-  --highlight-l: 50%;
+  --primary3-l: 49%;
+  --highlight-hs: 203, 27%;
+  --highlight-l: 40%;
   --tertiary-hs: 14, 34%;
-  --tertiary-l: 67%;
+  --tertiary-l: 40%;
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
 }
 body.dark.protanopia {
-  --primary-hs: 240, 3%;
-  --primary-l: 16%;
-  --primary2-hs: 235, 6%;
-  --primary2-l: 38%;
-  --primary3-hs: 237, 11%;
-  --primary3-l: 59%;
-  --highlight-hs: 239, 18%;
-  --highlight-l: 52%;
-  --tertiary-hs: 60, 19%;
-  --tertiary-l: 63%;
+  --primary-hs: 240, 2%;
+  --primary-l: 51%;
+  --primary2-hs: 232, 7%;
+  --primary2-l: 23%;
+  --primary3-hs: 240, 10%;
+  --primary3-l: 52%;
+  --highlight-hs: 240, 16%;
+  --highlight-l: 42%;
+  --tertiary-hs: 59, 23%;
+  --tertiary-l: 36%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
-body.dark.deuteranopia {
-  --primary-hs: 255, 5%;
-  --primary-l: 16%;
-  --primary2-hs: 248, 8%;
-  --primary2-l: 37%;
-  --primary3-hs: 247, 13%;
-  --primary3-l: 58%;
+body.dark.dueteranopia {
+  --primary-hs: 252, 4%;
+  --primary-l: 51%;
+  --primary2-hs: 252, 9%;
+  --primary2-l: 22%;
+  --primary3-hs: 246, 12%;
+  --primary3-l: 51%;
   --highlight-hs: 245, 19%;
-  --highlight-l: 51%;
-  --tertiary-hs: 64, 22%;
-  --tertiary-l: 65%;
+  --highlight-l: 41%;
+  --tertiary-hs: 65, 25%;
+  --tertiary-l: 38%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
 body.dark.tritanopia {
-  --primary-hs: 180, 8%;
-  --primary-l: 15%;
-  --primary2-hs: 180, 12%;
-  --primary2-l: 36%;
-  --primary3-hs: 180, 17%;
-  --primary3-l: 56%;
-  --highlight-hs: 179, 22%;
-  --highlight-l: 48%;
-  --tertiary-hs: 0, 29%;
-  --tertiary-l: 67%;
+  --primary-hs: 183, 8%;
+  --primary-l: 50%;
+  --primary2-hs: 180, 13%;
+  --primary2-l: 22%;
+  --primary3-hs: 180, 16%;
+  --primary3-l: 49%;
+  --highlight-hs: 180, 23%;
+  --highlight-l: 38%;
+  --tertiary-hs: 359, 29%;
+  --tertiary-l: 41%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
 body.dark.achromatopsia {
   --primary-hs: 0, 0%;
-  --primary-l: 16%;
+  --primary-l: 53%;
   --primary2-hs: 0, 0%;
-  --primary2-l: 38%;
+  --primary2-l: 23%;
   --primary3-hs: 0, 0%;
-  --primary3-l: 59%;
+  --primary3-l: 52%;
   --highlight-hs: 0, 0%;
-  --highlight-l: 49%;
+  --highlight-l: 39%;
   --tertiary-hs: 0, 0%;
-  --tertiary-l: 65%;
+  --tertiary-l: 38%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
 body.dark.protanomaly {
-  --primary-hs: 168, 6%;
-  --primary-l: 15%;
-  --primary2-hs: 200, 10%;
-  --primary2-l: 36%;
-  --primary3-hs: 202, 15%;
-  --primary3-l: 57%;
+  --primary-hs: 171, 5%;
+  --primary-l: 50%;
+  --primary2-hs: 200, 11%;
+  --primary2-l: 22%;
+  --primary3-hs: 202, 14%;
+  --primary3-l: 50%;
   --highlight-hs: 218, 23%;
-  --highlight-l: 50%;
-  --tertiary-hs: 34, 27%;
-  --tertiary-l: 65%;
+  --highlight-l: 41%;
+  --tertiary-hs: 33, 30%;
+  --tertiary-l: 38%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
 body.dark.deuteranomaly {
-  --primary-hs: 168, 6%;
-  --primary-l: 15%;
-  --primary2-hs: 194, 9%;
-  --primary2-l: 37%;
-  --primary3-hs: 197, 14%;
-  --primary3-l: 57%;
-  --highlight-hs: 215, 22%;
-  --highlight-l: 51%;
-  --tertiary-hs: 30, 27%;
-  --tertiary-l: 65%;
+  --primary-hs: 164, 6%;
+  --primary-l: 50%;
+  --primary2-hs: 196, 10%;
+  --primary2-l: 22%;
+  --primary3-hs: 198, 13%;
+  --primary3-l: 50%;
+  --highlight-hs: 217, 22%;
+  --highlight-l: 41%;
+  --tertiary-hs: 29, 29%;
+  --tertiary-l: 38%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
 body.dark.tritanomaly {
   --primary-hs: 163, 9%;
-  --primary-l: 15%;
-  --primary2-hs: 175, 13%;
-  --primary2-l: 36%;
-  --primary3-hs: 178, 17%;
-  --primary3-l: 56%;
+  --primary-l: 50%;
+  --primary2-hs: 176, 14%;
+  --primary2-l: 22%;
+  --primary3-hs: 179, 14%;
+  --primary3-l: 49%;
   --highlight-hs: 194, 25%;
-  --highlight-l: 49%;
-  --tertiary-hs: 9, 32%;
-  --tertiary-l: 67%;
+  --highlight-l: 39%;
+  --tertiary-hs: 8, 32%;
+  --tertiary-l: 40%;
   --secondary-hs: 0, 0%;
-  --secondary-l: 0%;
+  --secondary-l: 13%;
 }
 body.dark.achromatomaly {
-  --primary-hs: 150, 5%;
-  --primary-l: 16%;
-  --primary2-hs: 175, 6%;
-  --primary2-l: 37%;
-  --primary3-hs: 177, 9%;
-  --primary3-l: 58%;
-  --highlight-hs: 201, 12%;
-  --highlight-l: 49%;
-  --tertiary-hs: 16, 15%;
-  --tertiary-l: 66%;
-  --secondary-hs: 150, 5%;
-  --secondary-l: 16%;
+  --primary-hs: 152, 5%;
+  --primary-l: 52%;
+  --primary2-hs: 172, 7%;
+  --primary2-l: 22%;
+  --primary3-hs: 177, 8%;
+  --primary3-l: 51%;
+  --highlight-hs: 203, 13%;
+  --highlight-l: 40%;
+  --tertiary-hs: 15, 16%;
+  --tertiary-l: 39%;
+  --secondary-hs: 60, 2%;
+  --secondary-l: 13%;
 }
 
 body {
-  background-color: var(--secondary);
-  color: var(--primary);
+  background-color: hsl(var(--secondary-hs), var(--secondary-l));
+  color: hsl(var(--primary-hs), var(--primary-l));
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
