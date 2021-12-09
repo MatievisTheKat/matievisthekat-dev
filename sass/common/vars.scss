@@ -1,6 +1,6 @@
 @import './colours.scss';
 
-$themes: 'light', 'dark';// , 'solarized';
+$themes: 'light', 'dark'; // , 'solarized';
 
 $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
   'deuteranomaly', 'tritanomaly', 'achromatomaly';
@@ -10,12 +10,19 @@ body {
     .#{$theme} {
       @each $colourblindness in $colourblind-options {
         .#{$colourblindness} {
-          --primary: map-get($colours, '#{$theme}-#{$colourblindness}-primary');
-          --primary2: map-get($colours, '#{$theme}-#{$colourblindness}-primary-2');
-          --primary3: map-get($colours, '#{$theme}-#{$colourblindness}-primary-3');
-          --highlight: map-get($colours, '#{$theme}-#{$colourblindness}-highlight');
-          --tertiary: map-get($colours, '#{$theme}-#{$colourblindness}-tertiary');
-          --secondary: map-get($colours, '#{$theme}-#{$colourblindness}-secondary');
+          $theme-map: map-get($colours, $theme);
+          $colourblind: map-get($theme-map, $colourblindness);
+          --primary-hs: map-get($colourblind, 'primary-hs');
+          --primary-l: map-get($colourblind, 'primary-l');
+          --primary2-hs: map-get($colourblind, 'primary-2-hs');
+          --primary2-l: map-get($colourblind, 'primary-2-l');
+          --primary3-hs: map-get($colourblind, 'primary-3-hs');
+          --highlight-hs: map-get($colourblind, 'highlight-hs');
+          --highlight-l: map-get($colourblind, 'highlight-l');
+          --tertiary-hs: map-get($colourblind, 'tertiary-hs');
+          --tertiary-l: map-get($colourblind, 'tertiary-l');
+          --secondary-hs: map-get($colourblind, 'secondary-hs');
+          --secondary-l: map-get($colourblind, 'secondary-l');
         }
       }
     }
