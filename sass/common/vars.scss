@@ -13,6 +13,7 @@ $colourblind-options: 'none', 'protanopia', 'deuteranopia', 'tritanopia', 'achro
   --primary2-hs: #{map-get($colourblind, 'primary-2-hs')};
   --primary2-l: #{map-get($colourblind, 'primary-2-l')};
   --primary3-hs: #{map-get($colourblind, 'primary-3-hs')};
+  --primary3-l: #{map-get($colourblind, 'primary-3-l')};
   --highlight-hs: #{map-get($colourblind, 'highlight-hs')};
   --highlight-l: #{map-get($colourblind, 'highlight-l')};
   --tertiary-hs: #{map-get($colourblind, 'tertiary-hs')};
@@ -33,6 +34,7 @@ body {
           --primary2-hs: #{map-get($colourblind, 'primary-2-hs')};
           --primary2-l: #{map-get($colourblind, 'primary-2-l')};
           --primary3-hs: #{map-get($colourblind, 'primary-3-hs')};
+          --primary3-l: #{map-get($colourblind, 'primary-3-l')};
           --highlight-hs: #{map-get($colourblind, 'highlight-hs')};
           --highlight-l: #{map-get($colourblind, 'highlight-l')};
           --tertiary-hs: #{map-get($colourblind, 'tertiary-hs')};
