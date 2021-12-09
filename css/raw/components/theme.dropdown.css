@@ -48,5 +48,3 @@ div.theme-dropdown > ul > li:hover {
   cursor: pointer;
   box-shadow: 0 3px 3px 3px hsl(var(--tertiary-hs), var(--tertiary-l));
 }
-
-/*# sourceMappingURL=theme.dropdown.css.map */
