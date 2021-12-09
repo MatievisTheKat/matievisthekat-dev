@@ -1,5 +1,3 @@
-@import '../common/vars.scss';
-
 button.theme {
   &:hover {
     background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
