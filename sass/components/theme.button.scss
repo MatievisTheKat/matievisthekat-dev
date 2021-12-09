@@ -2,12 +2,12 @@
 
 button.theme {
   &:hover {
-    background-color: hsl(var(--secondary), 13%);
+    background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
     cursor: pointer;
   }
 
   transition: background-color 0.2s ease-in-out;
-  background-color: hsl(var(--secondary), 5%);
+  background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 5%));
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 30px #fff;
