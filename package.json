@@ -2,7 +2,8 @@
   "license": "MIT",
   "scripts": {
     "postcss": "postcss css/raw/**/*.css --base css/raw --dir css/prod --config postcss.config.js --map",
-    "sass": "sass sass:css/raw --no-source-map"
+    "sass": "sass sass:css/raw --no-source-map",
+    "watch": "yarn sass --watch & yarn postcss --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
