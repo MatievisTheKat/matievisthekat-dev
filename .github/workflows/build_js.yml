@@ -18,15 +18,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '17.x'
+          yarn: true
 
-      - name: Install TypeScript
-        run: npm install -g typescript
-
-      - name: Verify TypeScript version
-        run: tsc --version
+      - name: Install dependencies
+        run: yarn
 
       - name: Compile TypeScript
-        run: tsc
+        run: yarn tsc
 
       - name: Commit updated js
         run: |

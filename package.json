@@ -1,0 +1,16 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "postcss": "postcss css/raw/**/*.css --base css/raw --dir css/prod --map --config postcss.config.js",
+    "sass": "sass sass:css/raw --no-source-map"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "postcss-preset-env": "^7.0.1",
+    "postcss-reporter": "^7.0.4",
+    "typescript": "^4.5.2",
+    "sass": "^1.44.0"
+  }
+}

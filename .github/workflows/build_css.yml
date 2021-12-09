@@ -20,15 +20,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '17.x'
+          yarn: true
 
-      - name: Install Sass
-        run: npm install -g sass
-
-      - name: Verify Sass version
-        run: sass --version
+      - name: Install dependencies
+        run: yarn
 
       - name: Compile Sass
-        run: ./sass.sh
+        run: yarn sass
 
       - name: Commit updated css
         run: |
@@ -53,13 +51,10 @@ jobs:
           node-version: '17.x'
 
       - name: Install postcss & plugins
-        run: npm i -g postcss postcss-cli autoprefixer cssnano postcss-preset-env postcss-reporter
-
-      - name: Verify postcss version
-        run: postcss --version
+        run: yarn
 
       - name: Parse css
-        run: ./postcss.sh
+        run: yarn postcss
 
       - name: Commit updated css
         run: |
