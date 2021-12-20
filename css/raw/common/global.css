@@ -282,6 +282,16 @@ html {
   overflow-x: hidden;
 }
 
+a {
+  color: hsl(var(--highlight-hs), calc(var(--highlight-l) - 10%));
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: hsl(var(--highlight-hs), calc(var(--highlight-l) - 20%));
+  text-decoration: solid underline 1px;
+}
+
 .hide {
   display: none !important;
 }
