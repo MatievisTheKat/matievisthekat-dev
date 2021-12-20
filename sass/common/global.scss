@@ -71,6 +71,7 @@ a {
 a:hover, a:focus {
   color: hsl(var(--highlight-hs), calc(var(--highlight-l) - 20%));
   text-decoration: solid underline 1px;
+  cursor: pointer;
 }
 
 .hide {
