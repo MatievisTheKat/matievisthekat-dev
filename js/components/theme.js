@@ -75,7 +75,7 @@ function hideDropdown(mode) {
 }
 function setTheme(newTheme) {
     var _a, _b;
-    (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.remove('light', 'dark', 'solarized');
+    (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.remove('light', 'dark');
     (_b = document.querySelector('body')) === null || _b === void 0 ? void 0 : _b.classList.add(newTheme);
     window.localStorage.setItem('theme', newTheme);
     theme = newTheme;
