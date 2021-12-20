@@ -24,10 +24,10 @@ div.theme-dropdown {
 div.theme-dropdown.will-hide {
   animation: backOutRight 0.6s;
 }
-div.theme-dropdown#colourblind {
+div.theme-dropdown#colourblind-dropdown {
   right: 4%;
 }
-div.theme-dropdown#theme {
+div.theme-dropdown#theme-dropdown {
   right: 9%;
 }
 div.theme-dropdown > h5 {

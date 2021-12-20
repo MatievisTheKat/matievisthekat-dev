@@ -12,7 +12,7 @@ window.addEventListener('click', (e) => {
 });
 
 function toggleDropdown(mode: 'colourblind' | 'theme') {
-  const dropdown = document.querySelector(`div#${mode}.theme-dropdown`) as HTMLDivElement | null;
+  const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
     if (!dropdown.classList.contains('hide')) {
       hideDropdown(mode);
@@ -47,14 +47,14 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
   } else console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
 
   const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
-  const otherDropdown = document.querySelector(`div#${otherMode}.theme-dropdown`) as HTMLDivElement | null;
+  const otherDropdown = document.querySelector(`div#${otherMode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
   if (otherDropdown) {
     hideDropdown(otherMode);
   } else console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
 }
 
 function hideDropdown(mode: 'colourblind' | 'theme') {
-  const dropdown = document.querySelector(`div#${mode}.theme-dropdown`) as HTMLDivElement | null;
+  const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
     // this timout only hides the dropdown after the animation is done
     dropdown.classList.add('will-hide');

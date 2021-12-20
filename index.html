@@ -39,7 +39,7 @@
     <script defer src="js/pages/index.js"></script>
   </head>
   <body>
-    <button id="colourblind" class="theme" onclick="toggleDropdown('colourblind')">
+    <button name="coloudblindness themes" id="colourblind-theme" class="theme" onclick="toggleDropdown('colourblind')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -59,7 +59,7 @@
         <circle cx="6.5" cy="16.5" r="3.5"></circle>
       </svg>
     </button>
-    <div id="colourblind" class="theme-dropdown hide">
+    <div id="colourblind-dropdown" class="theme-dropdown hide">
       <h5>Colourblindness</h5>
       <ul style="padding-inline-start: 0">
         <li data-value="none">none</li>
@@ -74,7 +74,7 @@
       </ul>
     </div>
 
-    <button id="theme" class="theme" onclick="toggleDropdown('theme')">
+    <button name="site themes" id="theme" class="theme" onclick="toggleDropdown('theme')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -92,7 +92,7 @@
         <line x1="9.7" y1="17" x2="14.3" y2="17"></line>
       </svg>
     </button>
-    <div id="theme" class="theme-dropdown hide">
+    <div id="theme-dropdown" class="theme-dropdown hide">
       <h5>Theme</h5>
       <ul style="padding-inline-start: 0">
         <li data-value="light">light</li>

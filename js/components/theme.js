@@ -11,7 +11,7 @@ window.addEventListener('click', (e) => {
     }
 });
 function toggleDropdown(mode) {
-    const dropdown = document.querySelector(`div#${mode}.theme-dropdown`);
+    const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`);
     if (dropdown) {
         if (!dropdown.classList.contains('hide')) {
             hideDropdown(mode);
@@ -51,7 +51,7 @@ function toggleDropdown(mode) {
     else
         console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
     const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
-    const otherDropdown = document.querySelector(`div#${otherMode}.theme-dropdown`);
+    const otherDropdown = document.querySelector(`div#${otherMode}-dropdown.theme-dropdown`);
     if (otherDropdown) {
         hideDropdown(otherMode);
     }
@@ -59,7 +59,7 @@ function toggleDropdown(mode) {
         console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
 }
 function hideDropdown(mode) {
-    const dropdown = document.querySelector(`div#${mode}.theme-dropdown`);
+    const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`);
     if (dropdown) {
         dropdown.classList.add('will-hide');
         setTimeout(() => {

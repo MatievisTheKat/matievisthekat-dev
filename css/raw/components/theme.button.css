@@ -12,7 +12,7 @@ button.theme:hover {
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
   cursor: pointer;
 }
-button.theme#colourblind {
+button.theme#colourblind-theme {
   right: 4rem;
 }
 button.theme#theme {
