@@ -13,7 +13,7 @@ window.addEventListener('click', (e) => {
 function toggleDropdown(mode) {
     const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`);
     if (dropdown) {
-        if (!dropdown.classList.contains('hide')) {
+        if (!dropdown.classList.contains('hide') && !dropdown.classList.contains('will-hide')) {
             hideDropdown(mode);
         }
         else {
@@ -61,14 +61,18 @@ function toggleDropdown(mode) {
 function hideDropdown(mode) {
     const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`);
     if (dropdown) {
-        dropdown.classList.add('will-hide');
-        setTimeout(() => {
-            var _a;
-            dropdown.classList.remove('will-hide');
-            dropdown.classList.add('hide');
-            const clone = dropdown.cloneNode(true);
-            (_a = dropdown.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(clone, dropdown);
-        }, 500);
+        if (!dropdown.classList.contains('hide')) {
+            dropdown.classList.add('will-hide');
+            setTimeout(() => {
+                var _a;
+                dropdown.classList.remove('will-hide');
+                dropdown.classList.add('hide');
+                const clone = dropdown.cloneNode(true);
+                (_a = dropdown.parentElement) === null || _a === void 0 ? void 0 : _a.replaceChild(clone, dropdown);
+            }, 500);
+        }
+        else
+            console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown is already hidden`);
     }
     else
         console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);

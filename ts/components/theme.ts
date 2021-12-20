@@ -14,7 +14,7 @@ window.addEventListener('click', (e) => {
 function toggleDropdown(mode: 'colourblind' | 'theme') {
   const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
-    if (!dropdown.classList.contains('hide')) {
+    if (!dropdown.classList.contains('hide') && !dropdown.classList.contains('will-hide')) {
       hideDropdown(mode);
     } else {
       const items = dropdown.querySelectorAll<HTMLLIElement>('ul > li');
@@ -56,15 +56,17 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
 function hideDropdown(mode: 'colourblind' | 'theme') {
   const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
-    // this timout only hides the dropdown after the animation is done
-    dropdown.classList.add('will-hide');
-    setTimeout(() => {
-      dropdown.classList.remove('will-hide');
-      dropdown.classList.add('hide');
-      // replaces dropdown with clone to remove all event listeners. not necessary, just because i dont like the idea of unneeded event listeners lying around
-      const clone = dropdown.cloneNode(true) as HTMLDivElement;
-      dropdown.parentElement?.replaceChild(clone, dropdown);
-    }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
+    if (!dropdown.classList.contains('hide')) {
+      // this timout only hides the dropdown after the animation is done
+      dropdown.classList.add('will-hide');
+      setTimeout(() => {
+        dropdown.classList.remove('will-hide');
+        dropdown.classList.add('hide');
+        // replaces dropdown with clone to remove all event listeners. not necessary, just because i dont like the idea of unneeded event listeners lying around
+        const clone = dropdown.cloneNode(true) as HTMLDivElement;
+        dropdown.parentElement?.replaceChild(clone, dropdown);
+      }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
+    } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown is already hidden`);
   } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
 }
 
