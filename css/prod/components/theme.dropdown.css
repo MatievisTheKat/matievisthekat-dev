@@ -5,6 +5,7 @@ div.theme-dropdown {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 10%));
   border-radius: 10px;
   box-shadow: 0 6px 6px hsl(var(--primary2-hs), var(--primary2-l));
@@ -30,16 +31,11 @@ div.theme-dropdown#colourblind {
 div.theme-dropdown#theme {
   right: 11%;
 }
-[dir="ltr"] div.theme-dropdown > ul {
-  padding-left: 0px;
-}
-[dir="rtl"] div.theme-dropdown > ul {
-  padding-right: 0px;
+div.theme-dropdown > h5 {
+  margin-bottom: 0;
 }
 div.theme-dropdown > ul {
   list-style: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 div.theme-dropdown > ul > li {
   transition: box-shadow 0.2s ease-in-out;
