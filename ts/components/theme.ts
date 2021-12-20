@@ -69,7 +69,7 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
 }
 
 function setTheme(newTheme: Theme) {
-  document.querySelector('body')?.classList.remove('light', 'dark', 'solarized');
+  document.querySelector('body')?.classList.remove('light', 'dark');
 
   document.querySelector('body')?.classList.add(newTheme);
   window.localStorage.setItem('theme', newTheme);

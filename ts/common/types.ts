@@ -1,4 +1,4 @@
-type Theme = 'light' | 'dark' | 'solarized';
+type Theme = 'light' | 'dark';
 type Colourblind =
   | 'none'
   | 'protanopia'
