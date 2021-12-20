@@ -5,7 +5,7 @@
 ### palettes
 
 | colourblindness |                                light                                 | dark |
-| :------------ | :------------------------------------------------------------------: | :--: | :--: |
+| :------------ | :------------------------------------------------------------------: | :--: |
 | none       | [link](https://coolors.co/242d29-506966-7ba4a2-5d88a1-c79b8d-eeeeee) | [link](https://coolors.co/749083-30403e-669391-4a6d82-895443-212121) |
 | protanopia    | [link](https://coolors.co/272729-5a5b66-8c8da2-6f709a-b3b390-eeeeee) | [link](https://coolors.co/808086-36373e-797991-59597c-727147-212121) |
 | dueteranopia  | [link](https://coolors.co/27262a-595766-8a87a2-6d6999-b6b991-eeeeee) | [link](https://coolors.co/7e7c86-36343e-767391-57547b-757948-212121) |
