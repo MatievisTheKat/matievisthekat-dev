@@ -3,9 +3,12 @@ body {
 }
 
 main {
+  --offset: 10px;
+  --spread: 5px;
   background-color: var(--secondary);
   height: 100vh;
-  box-shadow: 0 -10px 5px 5px var(--secondary);
+  margin-top: calc(var(--offset) + var(--spread));
+  box-shadow: 0 calc(var(--offset) - var(--offset) * 2) var(--spread) var(--spread) var(--secondary);
 }
 
 #intro {

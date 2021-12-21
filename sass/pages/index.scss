@@ -1,15 +1,18 @@
 @import '../common/media.scss';
 
 body {
-  background: linear-gradient(
-    hsl(var(--secondary-hs), var(--secondary-l)),
-    hsl(var(--primary3-hs), var(--primary3-l))
-  ) !important;
+  background: linear-gradient(var(--secondary), var(--primary3)) !important;
 }
 
 main {
-  background-color: hsl(var(--secondary-hs), var(--secondary-l));
+  --offset: 10px;
+  --spread: 5px;
+
+  background-color: var(--secondary);
   height: 100vh;
+  margin-top: calc(var(--offset) + var(--spread));
+  //                      to make --offset negative
+  box-shadow: 0 calc(var(--offset) - (var(--offset) * 2)) var(--spread) var(--spread) var(--secondary);
 }
 
 #intro {
