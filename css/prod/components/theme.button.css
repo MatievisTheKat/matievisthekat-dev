@@ -1,16 +1,20 @@
 button.theme {
   transition: background-color 0.2s ease-in-out;
+  transition: transform 100ms linear;
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 5%));
+  transform: perspective(100px) translateZ(0px);
   border-radius: 5px;
   border: none;
   box-shadow: 0 0 30px var(--secondary);
   color: var(--tertiary);
   position: fixed;
   bottom: 4%;
+  z-index: 999;
 }
 button.theme:hover {
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
   cursor: pointer;
+  transform: perspective(100px) translateZ(10px);
 }
 button.theme#colourblind-theme {
   right: 4rem;
