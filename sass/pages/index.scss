@@ -4,15 +4,22 @@ body {
   background: linear-gradient(var(--secondary), var(--primary3)) !important;
 }
 
-main {
+section {
   --offset: 10px;
   --spread: 5px;
+  
+  &:not(.landing) {
+    --translate: 0px;
+  
+    transform: perspective(1000px) translateZ(var(--translate));
+    transition: transform 100ms ease;
+    background-color: var(--secondary);
+    //                      to make --offset negative
+    box-shadow: 0 calc(var(--offset) - (var(--offset) * 2)) var(--spread) var(--spread) var(--secondary);
+  }
 
-  background-color: var(--secondary);
   height: 100vh;
-  margin-top: calc(var(--offset) + var(--spread));
-  //                      to make --offset negative
-  box-shadow: 0 calc(var(--offset) - (var(--offset) * 2)) var(--spread) var(--spread) var(--secondary);
+  margin-top: calc(var(--offset) + var(--spread) + 5rem);
 }
 
 #intro {

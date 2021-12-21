@@ -39,7 +39,12 @@
     <script defer src="js/pages/index.js"></script>
   </head>
   <body>
-    <button aria-label="coloudblindness themes" id="colourblind-theme" class="theme" onclick="toggleDropdown('colourblind')">
+    <button
+      aria-label="coloudblindness themes"
+      id="colourblind-theme"
+      class="theme"
+      onclick="toggleDropdown('colourblind')"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -100,13 +105,26 @@
       </ul>
     </div>
 
-    <div id="intro">
-      <h1>matievisthekat.dev</h1>
-      <p>Hi there! My name is Matthew Stead, I'm <span id="age">x</span> year old a freelance software developer currently living in <a title="The South Africa wikipedia page" href="https://en.wikipedia.org/wiki/South_Africa" target="_blank"  rel="noopener">South Africa</a></p>
-    </div>
-
     <main>
-      
+      <section class="page landing">
+        <div id="intro">
+          <h1>matievisthekat.dev</h1>
+          <p>
+            Hi there! My name is Matthew Stead, I'm <span id="age">x</span> year old a freelance software developer
+            currently living in
+            <a
+              title="The South Africa wikipedia page"
+              href="https://en.wikipedia.org/wiki/South_Africa"
+              target="_blank"
+              rel="noopener"
+              >South Africa</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="page"></section>
+      <section class="page"></section>
     </main>
   </body>
 </html>
