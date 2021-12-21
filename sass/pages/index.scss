@@ -7,15 +7,16 @@ body {
 section {
   --offset: 10px;
   --spread: 5px;
+  --rotate: 0deg;
+
+  transition: transform 100ms ease;
+  transform: perspective(1000px) rotateX(var(--rotate));
   
   &:not(.landing) {
     --translate: 0px;
-  
-    transform: perspective(1000px) translateZ(var(--translate));
-    transition: transform 100ms ease;
+    transform: perspective(1000px) translateZ(var(--translate)) rotateX(var(--rotate));
+
     background-color: var(--secondary);
-    //                      to make --offset negative
-    box-shadow: 0 calc(var(--offset) - (var(--offset) * 2)) var(--spread) var(--spread) var(--secondary);
   }
 
   height: 100vh;

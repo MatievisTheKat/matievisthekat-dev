@@ -1,9 +1,11 @@
 "use strict";
 const sections = document.querySelectorAll('section.page');
-sections.forEach((sect) => {
+sections.forEach((sect, i) => {
     document.body.addEventListener('scroll', () => {
         const scrollValue = Math.fround(sect.offsetTop - document.body.scrollTop);
-        sect.style.setProperty('--translate', `-${scrollValue / 4}px`);
+        const style = sect.style;
+        style.setProperty('--translate', `${scrollValue / 4}px`);
+        style.setProperty('--rotate', `${-scrollValue / 15}deg`);
     });
 });
 //# sourceMappingURL=index.js.map
