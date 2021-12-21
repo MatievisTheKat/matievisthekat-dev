@@ -9,7 +9,7 @@ div.theme-dropdown {
   flex-direction: column;
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 10%));
   border-radius: 10px;
-  box-shadow: 0 6px 6px hsl(var(--primary2-hs), var(--primary2-l));
+  box-shadow: 0 6px 6px var(--primary2);
   -webkit-animation: jackInTheBox 0.7s;
           animation: jackInTheBox 0.7s;
 }
@@ -51,5 +51,5 @@ div.theme-dropdown > ul > li#selected {
 }
 div.theme-dropdown > ul > li:hover {
   cursor: pointer;
-  box-shadow: 0 3px 3px 3px hsl(var(--tertiary-hs), var(--tertiary-l));
+  box-shadow: 0 3px 3px 3px var(--tertiary);
 }

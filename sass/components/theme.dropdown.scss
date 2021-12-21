@@ -22,7 +22,7 @@ div.theme-dropdown {
 
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 10%));
   border-radius: 10px;
-  box-shadow: 0 6px 6px hsl(var(--primary2-hs), var(--primary2-l));
+  box-shadow: 0 6px 6px var(--primary2);
 
   animation: jackInTheBox 0.7s;
   &.will-hide {
@@ -59,7 +59,7 @@ div.theme-dropdown {
 
       &:hover {
         cursor: pointer;
-        box-shadow: 0 3px 3px 3px hsl(var(--tertiary-hs), var(--tertiary-l));
+        box-shadow: 0 3px 3px 3px var(--tertiary);
       }
     }
   }

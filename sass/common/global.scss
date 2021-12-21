@@ -29,18 +29,30 @@ body {
         &.#{$colourblindness} {
           $theme-map: map-get($colours, $theme);
           $colourblind: map-get($theme-map, $colourblindness);
+
           --primary-hs: #{map-get($colourblind, 'primary-hs')};
           --primary-l: #{map-get($colourblind, 'primary-l')};
+          --primary: hsl(var(--primary-hs), var(--primary-l));
+
           --primary2-hs: #{map-get($colourblind, 'primary-2-hs')};
           --primary2-l: #{map-get($colourblind, 'primary-2-l')};
+          --primary2: hsl(var(--primary2-hs), var(--primary2-l));
+
           --primary3-hs: #{map-get($colourblind, 'primary-3-hs')};
           --primary3-l: #{map-get($colourblind, 'primary-3-l')};
+          --primary3: hsl(var(--primary3-hs), var(--primary3-l));
+
           --highlight-hs: #{map-get($colourblind, 'highlight-hs')};
           --highlight-l: #{map-get($colourblind, 'highlight-l')};
+          --highlight: hsl(var(--highlight-hs), var(--highlight-l));
+
           --tertiary-hs: #{map-get($colourblind, 'tertiary-hs')};
           --tertiary-l: #{map-get($colourblind, 'tertiary-l')};
+          --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
+
           --secondary-hs: #{map-get($colourblind, 'secondary-hs')};
           --secondary-l: #{map-get($colourblind, 'secondary-l')};
+          --secondary: hsl(var(--secondary-hs), var(--secondary-l));
         }
       }
     }
@@ -49,7 +61,7 @@ body {
 
 body {
   background-color: hsl(var(--secondary-hs), var(--secondary-l));
-  color: hsl(var(--primary-hs), var(--primary-l));
+  color: var(--primary);
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
 }
@@ -68,7 +80,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: hsl(var(--highlight-hs), calc(var(--highlight-l) - 20%));
   text-decoration: solid underline 1px;
   cursor: pointer;

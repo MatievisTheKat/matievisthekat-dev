@@ -1,10 +1,11 @@
 body {
-  background: linear-gradient(hsl(var(--secondary-hs), var(--secondary-l)), hsl(var(--primary3-hs), var(--primary3-l))) !important;
+  background: linear-gradient(var(--secondary), var(--primary3)) !important;
 }
 
 main {
-  background-color: hsl(var(--secondary-hs), var(--secondary-l));
+  background-color: var(--secondary);
   height: 100vh;
+  box-shadow: 0 -10px 5px 5px var(--secondary);
 }
 
 #intro {

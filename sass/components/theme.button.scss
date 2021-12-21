@@ -8,8 +8,8 @@ button.theme {
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 5%));
   border-radius: 5px;
   border: none;
-  box-shadow: 0 0 30px hsl(var(--secondary-hs), var(--secondary-l));
-  color: hsl(var(--tertiary-hs), var(--tertiary-l));
+  box-shadow: 0 0 30px var(--secondary);
+  color: var(--tertiary);
 
   position: fixed;
   bottom: 4%;

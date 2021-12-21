@@ -16,261 +16,368 @@
 body.light.none {
   --primary-hs: 153, 11%;
   --primary-l: 16%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 173, 14%;
   --primary2-l: 36%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 177, 18%;
   --primary3-l: 56%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 202, 27%;
   --highlight-l: 50%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 14, 34%;
   --tertiary-l: 67%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.protanopia {
   --primary-hs: 240, 3%;
   --primary-l: 16%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 235, 6%;
   --primary2-l: 38%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 237, 11%;
   --primary3-l: 59%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 239, 18%;
   --highlight-l: 52%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 60, 19%;
   --tertiary-l: 63%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.dueteranopia {
   --primary-hs: 255, 5%;
   --primary-l: 16%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 248, 8%;
   --primary2-l: 37%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 247, 13%;
   --primary3-l: 58%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 245, 19%;
   --highlight-l: 51%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 64, 22%;
   --tertiary-l: 65%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.tritanopia {
   --primary-hs: 180, 8%;
   --primary-l: 15%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 180, 12%;
   --primary2-l: 36%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 180, 17%;
   --primary3-l: 56%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 179, 22%;
   --highlight-l: 48%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 0, 29%;
   --tertiary-l: 67%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.achromatopsia {
   --primary-hs: 0, 0%;
   --primary-l: 16%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 0, 0%;
   --primary2-l: 38%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 0, 0%;
   --primary3-l: 59%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 0, 0%;
   --highlight-l: 49%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 0, 0%;
   --tertiary-l: 65%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.protanomaly {
   --primary-hs: 168, 6%;
   --primary-l: 15%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 200, 10%;
   --primary2-l: 36%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 202, 15%;
   --primary3-l: 57%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 218, 23%;
   --highlight-l: 50%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 34, 27%;
   --tertiary-l: 65%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.deuteranomaly {
   --primary-hs: 168, 6%;
   --primary-l: 15%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 194, 9%;
   --primary2-l: 37%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 197, 14%;
   --primary3-l: 57%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 215, 22%;
   --highlight-l: 51%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 30, 27%;
   --tertiary-l: 65%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.tritanomaly {
   --primary-hs: 163, 9%;
   --primary-l: 15%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 175, 13%;
   --primary2-l: 36%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 178, 17%;
   --primary3-l: 56%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 194, 25%;
   --highlight-l: 49%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 9, 32%;
   --tertiary-l: 67%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.light.achromatomaly {
   --primary-hs: 150, 5%;
   --primary-l: 16%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 175, 6%;
   --primary2-l: 37%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 177, 9%;
   --primary3-l: 58%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 201, 12%;
   --highlight-l: 49%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 16, 15%;
   --tertiary-l: 66%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 60, 3%;
   --secondary-l: 93%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.none {
   --primary-hs: 152, 11%;
   --primary-l: 51%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 173, 14%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 177, 18%;
   --primary3-l: 49%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 203, 27%;
   --highlight-l: 40%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 14, 34%;
   --tertiary-l: 40%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.protanopia {
   --primary-hs: 240, 2%;
   --primary-l: 51%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 232, 7%;
   --primary2-l: 23%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 240, 10%;
   --primary3-l: 52%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 240, 16%;
   --highlight-l: 42%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 59, 23%;
   --tertiary-l: 36%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.dueteranopia {
   --primary-hs: 252, 4%;
   --primary-l: 51%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 252, 9%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 246, 12%;
   --primary3-l: 51%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 245, 19%;
   --highlight-l: 41%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 65, 25%;
   --tertiary-l: 38%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.tritanopia {
   --primary-hs: 183, 8%;
   --primary-l: 50%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 180, 13%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 180, 16%;
   --primary3-l: 49%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 180, 23%;
   --highlight-l: 38%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 359, 29%;
   --tertiary-l: 41%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.achromatopsia {
   --primary-hs: 0, 0%;
   --primary-l: 53%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 0, 0%;
   --primary2-l: 23%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 0, 0%;
   --primary3-l: 52%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 0, 0%;
   --highlight-l: 39%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 0, 0%;
   --tertiary-l: 38%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.protanomaly {
   --primary-hs: 171, 5%;
   --primary-l: 50%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 200, 11%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 202, 14%;
   --primary3-l: 50%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 218, 23%;
   --highlight-l: 41%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 33, 30%;
   --tertiary-l: 38%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.deuteranomaly {
   --primary-hs: 164, 6%;
   --primary-l: 50%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 196, 10%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 198, 13%;
   --primary3-l: 50%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 217, 22%;
   --highlight-l: 41%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 29, 29%;
   --tertiary-l: 38%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.tritanomaly {
   --primary-hs: 163, 9%;
   --primary-l: 50%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 176, 14%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 179, 14%;
   --primary3-l: 49%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 194, 25%;
   --highlight-l: 39%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 8, 32%;
   --tertiary-l: 40%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 body.dark.achromatomaly {
   --primary-hs: 152, 5%;
   --primary-l: 52%;
+  --primary: hsl(var(--primary-hs), var(--primary-l));
   --primary2-hs: 172, 7%;
   --primary2-l: 22%;
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 177, 8%;
   --primary3-l: 51%;
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 203, 13%;
   --highlight-l: 40%;
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
   --tertiary-hs: 15, 16%;
   --tertiary-l: 39%;
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
   --secondary-hs: 60, 2%;
   --secondary-l: 13%;
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 }
 
 body {
   background-color: hsl(0, 0%, 93%);
   background-color: hsl(var(--secondary-hs), var(--secondary-l));
-  color: hsl(153, 11%, 16%);
-  color: hsl(var(--primary-hs), var(--primary-l));
+  color: var(--primary);
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
@@ -290,7 +397,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: hsl(202, 27%, calc(50% - 20%));
   color: hsl(var(--highlight-hs), calc(var(--highlight-l) - 20%));
   -webkit-text-decoration: solid underline 1px;
