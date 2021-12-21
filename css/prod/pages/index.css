@@ -28,5 +28,5 @@ section:not(.landing) {
   padding: 0 0.5rem;
 }
 #intro > * {
-  transform: translateY(-15vh);
+  transform: translateY(-25vh);
 }
