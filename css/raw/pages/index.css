@@ -2,6 +2,11 @@ body {
   background: linear-gradient(hsl(var(--secondary-hs), var(--secondary-l)), hsl(var(--primary3-hs), var(--primary3-l))) !important;
 }
 
+main {
+  background-color: hsl(var(--secondary-hs), var(--secondary-l));
+  height: 100vh;
+}
+
 #intro {
   display: flex;
   flex-direction: column;
