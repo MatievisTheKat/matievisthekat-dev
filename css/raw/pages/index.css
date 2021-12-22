@@ -5,9 +5,6 @@ body {
 section {
   --offset: 10px;
   --spread: 5px;
-  --rotate: 0deg;
-  transition: transform 100ms ease;
-  transform: perspective(1000px) rotateX(var(--rotate));
   height: 100vh;
   margin-top: calc(var(--offset) + var(--spread) + 5rem);
   margin-left: auto;
@@ -15,7 +12,8 @@ section {
 }
 section:not(.landing) {
   --translate: 0px;
-  transform: perspective(1000px) translateZ(var(--translate)) rotateX(var(--rotate));
+  transition: transform 100ms ease;
+  transform: perspective(1000px) translateZ(var(--translate));
   background-color: var(--secondary);
 }
 

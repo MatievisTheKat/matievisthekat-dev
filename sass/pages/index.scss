@@ -7,14 +7,13 @@ body {
 section {
   --offset: 10px;
   --spread: 5px;
-  --rotate: 0deg;
 
-  transition: transform 100ms ease;
-  transform: perspective(1000px) rotateX(var(--rotate));
   
   &:not(.landing) {
     --translate: 0px;
-    transform: perspective(1000px) translateZ(var(--translate)) rotateX(var(--rotate));
+
+    transition: transform 100ms ease;
+    transform: perspective(1000px) translateZ(var(--translate));
 
     background-color: var(--secondary);
   }
