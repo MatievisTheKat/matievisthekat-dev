@@ -24,8 +24,15 @@ table {
   border-color: black;
   text-align: center;
 }
-table td, table th {
-  border: 1px solid black;
+table td,
+table th {
+  border: 2px solid black;
+}
+table td:hover,
+table th:hover {
+  border: 2px solid transparent;
+  -webkit-animation: rainbow 3s linear infinite;
+          animation: rainbow 3s linear infinite;
 }
 table > thead {
   background-color: var(--highlight);
@@ -46,4 +53,45 @@ table > tbody {
   align-items: center;
   text-align: center;
   padding: 0 0.5rem;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    border-image: linear-gradient(to left, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  25% {
+    border-image: linear-gradient(to bottom, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  50% {
+    border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  75% {
+    border-image: linear-gradient(to top, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  100% {
+    border-image: linear-gradient(to left, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    -o-border-image: linear-gradient(to left, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+       border-image: linear-gradient(to left, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  25% {
+    -o-border-image: linear-gradient(to bottom, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+       border-image: linear-gradient(to bottom, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  50% {
+    -o-border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+       border-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  75% {
+    -o-border-image: linear-gradient(to top, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+       border-image: linear-gradient(to top, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
+  100% {
+    -o-border-image: linear-gradient(to left, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+       border-image: linear-gradient(to left, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%) 1;
+  }
 }
