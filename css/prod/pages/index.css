@@ -2,7 +2,7 @@ body {
   background: linear-gradient(var(--secondary), var(--primary3)) !important;
 }
 
-section {
+section.page {
   --offset: 10px;
   --spread: 5px;
   height: 100vh;
@@ -10,11 +10,12 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-section:not(.landing) {
+section.page:not(.landing) {
   --translate: 0px;
   transition: transform 100ms ease;
   transform: perspective(1000px) translateZ(var(--translate));
   background-color: var(--secondary);
+  padding: 10px 7vw;
 }
 
 #intro {
