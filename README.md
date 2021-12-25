@@ -16,6 +16,18 @@
 | tritanomaly   | [link](https://coolors.co/242b29-506866-7ca3a2-5e8e9c-c5978f-eeeeee) | [link](https://coolors.co/748c85-303f3e-679291-4b727e-874f46-212121) |
 | achromatomaly | [link](https://coolors.co/272b29-596463-8a9d9c-6e828d-b5a19a-eeeeed) | [link](https://coolors.co/7d8a84-353d3c-778b8a-586872-735b53-212120) |
 
+| colourblindess | accents |
+| :--- | :---: | :---: |
+| none | [link](https://coolors.co/7d82b8-b7e3cc-c4ffb2-d6f7a3) |
+| protanopia | [link](https://coolors.co/7f7faa-cacad1-dddec4-e4e4b7) |
+| dueteranopia | [link](https://coolors.co/7e7ea7-c7c4d2-dad5c9-e2dfbc) |
+| tritanopia | [link](https://coolors.co/7da09e-b9d5d6-c6d3d6-d7c7ca) |
+| achromatopsia | [link](https://coolors.co/868686-d3d3d3-e4e4e4-e3e3e3) |
+| protanomaly | [link](https://coolors.co/7d80b1-bfd4ce-ceebbb-dcecad) |
+| deuteranomaly | [link](https://coolors.co/7e80b0-bfd7cf-cfefbc-dceeae) |
+| tritanomaly | [link](https://coolors.co/7d90ae-b8dcd0-c5eac0-d7e0b2) |
+| achromatomaly | [link](https://coolors.co/82849c-c6dacf-d5f0cd-ddecc6) |
+
 ### project structure
 - `~/.github` GitHub configuration
   - `/workflows` GitHub workflows
