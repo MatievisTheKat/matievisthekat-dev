@@ -1,4 +1,5 @@
 @import './colours.scss';
+@import './mixins.scss';
 
 $themes: 'light', 'dark';
 
@@ -79,7 +80,7 @@ body {
           --accent3-hs: #{map-get($accent-cb, 'three-hs')};
           --accent3-l: #{map-get($accent-cb, 'three-l')};
           --accent3: hsl(var(--accent3-hs), var(--accent3-l));
-          
+
           --accent4-hs: #{map-get($accent-cb, 'four-hs')};
           --accent4-l: #{map-get($accent-cb, 'four-l')};
           --accent4: hsl(var(--accent4-hs), var(--accent4-l));
@@ -119,4 +120,8 @@ a:focus {
 
 .hide {
   display: none !important;
+}
+
+.feature {
+  @include featureBackground();
 }

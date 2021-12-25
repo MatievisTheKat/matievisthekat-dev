@@ -629,3 +629,9 @@ a:focus {
 .hide {
   display: none !important;
 }
+
+.feature {
+  background: linear-gradient(to right top, var(--tertiary), var(--accent1));
+  border-radius: 7px;
+  padding: 3px;
+}
