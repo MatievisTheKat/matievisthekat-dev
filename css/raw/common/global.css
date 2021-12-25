@@ -11,6 +11,14 @@
   --tertiary-l: 67%;
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
+  --accent1-hs: ;
+  --accent1-l: ;
+  --accent2-hs: ;
+  --accent2-l: ;
+  --accent3-hs: ;
+  --accent3-l: ;
+  --accent4-hs: ;
+  --accent4-l: ;
 }
 
 body.light.none {
@@ -32,6 +40,18 @@ body.light.none {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 235, 29%;
+  --accent1-l: 61%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 149, 44%;
+  --accent2-l: 80%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 106, 100%;
+  --accent3-l: 85%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 84, 84%;
+  --accent4-l: 80%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.protanopia {
   --primary-hs: 240, 3%;
@@ -52,6 +72,18 @@ body.light.protanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 240, 20%;
+  --accent1-l: 58%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 240, 7%;
+  --accent2-l: 81%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 62, 28%;
+  --accent3-l: 82%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 60, 45%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.dueteranopia {
   --primary-hs: 255, 5%;
@@ -72,6 +104,18 @@ body.light.dueteranopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 240, 19%;
+  --accent1-l: 57%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 253, 13%;
+  --accent2-l: 80%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 42, 19%;
+  --accent3-l: 82%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 55, 40%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.tritanopia {
   --primary-hs: 180, 8%;
@@ -92,6 +136,18 @@ body.light.tritanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 177, 16%;
+  --accent1-l: 56%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 182, 26%;
+  --accent2-l: 78%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 191, 16%;
+  --accent3-l: 81%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 349, 17%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.achromatopsia {
   --primary-hs: 0, 0%;
@@ -112,6 +168,18 @@ body.light.achromatopsia {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 0, 0%;
+  --accent1-l: 53%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 0, 0%;
+  --accent2-l: 83%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 0, 0%;
+  --accent3-l: 89%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 0, 0%;
+  --accent4-l: 89%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.protanomaly {
   --primary-hs: 168, 6%;
@@ -132,6 +200,18 @@ body.light.protanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 237, 25%;
+  --accent1-l: 59%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 163, 20%;
+  --accent2-l: 79%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 96, 55%;
+  --accent3-l: 83%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 75, 62%;
+  --accent4-l: 80%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.deuteranomaly {
   --primary-hs: 168, 6%;
@@ -152,6 +232,18 @@ body.light.deuteranomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 238, 24%;
+  --accent1-l: 59%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 160, 23%;
+  --accent2-l: 80%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 98, 61%;
+  --accent3-l: 84%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 77, 65%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.tritanomaly {
   --primary-hs: 163, 9%;
@@ -172,6 +264,18 @@ body.light.tritanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 217, 23%;
+  --accent1-l: 59%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 160, 34%;
+  --accent2-l: 79%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 113, 50%;
+  --accent3-l: 84%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 72, 43%;
+  --accent4-l: 79%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.light.achromatomaly {
   --primary-hs: 150, 5%;
@@ -192,6 +296,18 @@ body.light.achromatomaly {
   --secondary-hs: 60, 3%;
   --secondary-l: 93%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 235, 12%;
+  --accent1-l: 56%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 147, 21%;
+  --accent2-l: 82%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 106, 54%;
+  --accent3-l: 87%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 84, 50%;
+  --accent4-l: 85%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.none {
   --primary-hs: 152, 11%;
@@ -212,6 +328,18 @@ body.dark.none {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 235, 29%;
+  --accent1-l: 61%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 149, 44%;
+  --accent2-l: 80%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 106, 100%;
+  --accent3-l: 85%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 84, 84%;
+  --accent4-l: 80%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.protanopia {
   --primary-hs: 240, 2%;
@@ -232,6 +360,18 @@ body.dark.protanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 240, 20%;
+  --accent1-l: 58%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 240, 7%;
+  --accent2-l: 81%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 62, 28%;
+  --accent3-l: 82%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 60, 45%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.dueteranopia {
   --primary-hs: 252, 4%;
@@ -252,6 +392,18 @@ body.dark.dueteranopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 240, 19%;
+  --accent1-l: 57%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 253, 13%;
+  --accent2-l: 80%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 42, 19%;
+  --accent3-l: 82%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 55, 40%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.tritanopia {
   --primary-hs: 183, 8%;
@@ -272,6 +424,18 @@ body.dark.tritanopia {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 177, 16%;
+  --accent1-l: 56%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 182, 26%;
+  --accent2-l: 78%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 191, 16%;
+  --accent3-l: 81%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 349, 17%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.achromatopsia {
   --primary-hs: 0, 0%;
@@ -292,6 +456,18 @@ body.dark.achromatopsia {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 0, 0%;
+  --accent1-l: 53%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 0, 0%;
+  --accent2-l: 83%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 0, 0%;
+  --accent3-l: 89%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 0, 0%;
+  --accent4-l: 89%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.protanomaly {
   --primary-hs: 171, 5%;
@@ -312,6 +488,18 @@ body.dark.protanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 237, 25%;
+  --accent1-l: 59%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 163, 20%;
+  --accent2-l: 79%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 96, 55%;
+  --accent3-l: 83%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 75, 62%;
+  --accent4-l: 80%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.deuteranomaly {
   --primary-hs: 164, 6%;
@@ -332,6 +520,18 @@ body.dark.deuteranomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 238, 24%;
+  --accent1-l: 59%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 160, 23%;
+  --accent2-l: 80%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 98, 61%;
+  --accent3-l: 84%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 77, 65%;
+  --accent4-l: 81%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.tritanomaly {
   --primary-hs: 163, 9%;
@@ -352,6 +552,18 @@ body.dark.tritanomaly {
   --secondary-hs: 0, 0%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 217, 23%;
+  --accent1-l: 59%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 160, 34%;
+  --accent2-l: 79%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 113, 50%;
+  --accent3-l: 84%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 72, 43%;
+  --accent4-l: 79%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 body.dark.achromatomaly {
   --primary-hs: 152, 5%;
@@ -372,6 +584,18 @@ body.dark.achromatomaly {
   --secondary-hs: 60, 2%;
   --secondary-l: 13%;
   --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  --accent1-hs: 235, 12%;
+  --accent1-l: 56%;
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent2-hs: 147, 21%;
+  --accent2-l: 82%;
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
+  --accent3-hs: 106, 54%;
+  --accent3-l: 87%;
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
+  --accent4-hs: 84, 50%;
+  --accent4-l: 85%;
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 
 body {
