@@ -1,19 +1,6 @@
-@keyframes Flash {
-  0% {
-    background-position: -100% 50%;
-  }
-  50% {
-    background-position: 200% 50%;
-  }
-  100% {
-    background-position: -100% 50%;
-  }
-}
 span#age {
   font-family: monospace;
-  background: linear-gradient(to top right, var(--accent3), hsl(var(--accent2-hs), calc(var(--accent2-l) - 10%)) 45% 55%, var(--accent4));
-  background-size: 800% 800%;
+  background: linear-gradient(to right top, var(--tertiary), var(--accent1));
   border-radius: 7px;
   padding: 3px;
-  animation: Flash 10s infinite ease-in-out;
 }
