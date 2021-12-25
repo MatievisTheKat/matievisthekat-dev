@@ -5,8 +5,8 @@ button.theme-button {
   transform: perspective(100px) translateZ(0px);
   border-radius: 5px;
   border: none;
-  box-shadow: 0 0 30px var(--secondary);
-  color: var(--tertiary);
+  box-shadow: 0 0 30px var(--tertiary);
+  color: hsl(var(--tertiary-hs), calc(var(--tertiary-l) + 15%));
   position: fixed;
   bottom: 4%;
   right: 4rem;
