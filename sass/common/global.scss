@@ -3,8 +3,7 @@
 
 $themes: 'light', 'dark';
 
-$colourblind-options: 'none', 'protanopia', 'dueteranopia', 'tritanopia', 'achromatopsia', 'protanomaly',
-  'deuteranomaly', 'tritanomaly', 'achromatomaly';
+$colourblind-options: 'none';
 
 :root {
   $theme-map: map-get($colours, 'light');

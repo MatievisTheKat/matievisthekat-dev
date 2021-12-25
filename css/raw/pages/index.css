@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(var(--secondary), var(--primary3)) !important;
+  background: linear-gradient(var(--primary3) 60%, var(--secondary)) !important;
 }
 
 #intro {

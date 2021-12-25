@@ -1,4 +1,4 @@
-button.theme {
+button#theme-button {
   transition: background-color 0.2s ease-in-out;
   transition: transform 100ms linear;
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 5%));
@@ -9,16 +9,11 @@ button.theme {
   color: var(--tertiary);
   position: fixed;
   bottom: 4%;
+  right: 4rem;
   z-index: 999;
 }
-button.theme:hover {
+button#theme-button:hover {
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
   cursor: pointer;
   transform: perspective(100px) translateZ(10px);
-}
-button.theme#colourblind-theme {
-  right: 4rem;
-}
-button.theme#theme {
-  right: 8rem;
 }

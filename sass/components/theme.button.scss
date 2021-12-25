@@ -1,4 +1,4 @@
-button.theme {
+button#theme-button {
   &:hover {
     background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
     cursor: pointer;
@@ -17,13 +17,6 @@ button.theme {
 
   position: fixed;
   bottom: 4%;
+  right: 4rem;
   z-index: 999;
-
-  &#colourblind-theme {
-    right: 4rem;
-  }
-
-  &#theme {
-    right: 8rem;
-  }
 }

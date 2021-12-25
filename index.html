@@ -62,47 +62,7 @@
       </div>
     </main>
 
-    <button
-      aria-label="coloudblindness themes"
-      id="colourblind-theme"
-      class="theme"
-      onclick="toggleDropdown('colourblind')"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        stroke-width="2"
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M8 4h-2l-3 10v2.5"></path>
-        <path d="M16 4h2l3 10v2.5"></path>
-        <line x1="10" y1="16" x2="14" y2="16"></line>
-        <circle cx="17.5" cy="16.5" r="3.5"></circle>
-        <circle cx="6.5" cy="16.5" r="3.5"></circle>
-      </svg>
-    </button>
-    <div id="colourblind-dropdown" class="theme-dropdown hide">
-      <h5>Colourblindness</h5>
-      <ul style="padding-inline-start: 0">
-        <li data-value="none">none</li>
-        <li data-value="protanopia">protanopia</li>
-        <li data-value="dueteranopia">dueteranopia</li>
-        <li data-value="tritanopia">tritanopia</li>
-        <li data-value="achromatopsia">achromatopsia</li>
-        <li data-value="protanomaly">protanomaly</li>
-        <li data-value="deuteranomaly">deuteranomaly</li>
-        <li data-value="tritanomaly">tritanomaly</li>
-        <li data-value="achromatomaly">achromatomaly</li>
-      </ul>
-    </div>
-
-    <button aria-label="site themes" id="theme" class="theme" onclick="toggleDropdown('theme')">
+    <button aria-label="site themes" id="theme-button" onclick="toggleDropdown('theme')">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -120,7 +80,7 @@
         <line x1="9.7" y1="17" x2="14.3" y2="17"></line>
       </svg>
     </button>
-    <div id="theme-dropdown" class="theme-dropdown hide">
+    <div id="theme-dropdown" class="hide">
       <h5>Theme</h5>
       <ul style="padding-inline-start: 0">
         <li data-value="light">light</li>
