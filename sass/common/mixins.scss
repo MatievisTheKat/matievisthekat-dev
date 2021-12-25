@@ -6,10 +6,10 @@ $bg-colours: var(--accent3), hsl(var(--accent2-hs), calc(var(--accent2-l) - 10%)
   border-radius: 7px;
   padding: 3px;
 
-  animation: Rainbow 10s infinite ease-in-out;
+  animation: Flash 10s infinite ease-in-out;
 }
 
-@keyframes Rainbow {
+@keyframes Flash {
   0% {
     background-position: -100% 50%;
   }
