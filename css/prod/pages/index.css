@@ -1,1 +1,1 @@
-body{background:linear-gradient(var(--primary3) 60%,var(--secondary))!important}#intro{margin:10% 5% 5%;padding:0 .5rem;text-align:left}
+body{background:linear-gradient(var(--primary3) 60%,var(--secondary))!important}#intro{margin:10% 5% 5%;padding:0 .5rem;text-align:left}@media screen and (min-width:892px){#intro{width:50%}}
