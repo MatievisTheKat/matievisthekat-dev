@@ -17,7 +17,7 @@
 | achromatomaly | [link](https://coolors.co/272b29-596463-8a9d9c-6e828d-b5a19a-eeeeed) | [link](https://coolors.co/7d8a84-353d3c-778b8a-586872-735b53-212120) |
 
 | colourblindess | accents |
-| :--- | :---: | :---: |
+| :--- | :---: |
 | none | [link](https://coolors.co/7d82b8-b7e3cc-c4ffb2-d6f7a3) |
 | protanopia | [link](https://coolors.co/7f7faa-cacad1-dddec4-e4e4b7) |
 | dueteranopia | [link](https://coolors.co/7e7ea7-c7c4d2-dad5c9-e2dfbc) |
