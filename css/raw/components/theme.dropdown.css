@@ -10,7 +10,7 @@ div.theme-dropdown {
   flex-direction: column;
   background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 10%));
   border-radius: 10px;
-  box-shadow: 0 6px 6px var(--primary2);
+  box-shadow: 0 15px 15px 1px var(--primary);
   animation: jackInTheBox 0.7s;
 }
 @media screen and (max-width: 680px) {
