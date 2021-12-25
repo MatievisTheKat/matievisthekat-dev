@@ -1,7 +1,7 @@
 @mixin featureBackground {
   background: linear-gradient(
     to right top,
-    var(--tertiary),
+    var(--accent3),
     var(--accent1)
   );
   border-radius: 7px;

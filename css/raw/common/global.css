@@ -119,7 +119,7 @@ a:focus {
 }
 
 .feature {
-  background: linear-gradient(to right top, var(--tertiary), var(--accent1));
+  background: linear-gradient(to right top, var(--accent3), var(--accent1));
   border-radius: 7px;
   padding: 3px;
 }
