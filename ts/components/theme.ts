@@ -5,14 +5,13 @@ document.querySelector('body')?.classList.add(colourblind, theme);
 
 window.addEventListener('click', (e) => {
   const target = e.target as HTMLElement;
-  if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme')) {
+  if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme-button')) {
     hideDropdown('theme');
-    hideDropdown('colourblind');
   }
 });
 
-function toggleDropdown(mode: 'colourblind' | 'theme') {
-  const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
+function toggleDropdown(mode: 'theme' | 'colourblind') {
+  const dropdown = document.querySelector(`div.${mode}-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
     if (!dropdown.classList.contains('hide') && !dropdown.classList.contains('will-hide')) {
       hideDropdown(mode);
@@ -47,14 +46,14 @@ function toggleDropdown(mode: 'colourblind' | 'theme') {
   } else console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
 
   const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
-  const otherDropdown = document.querySelector(`div#${otherMode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
+  const otherDropdown = document.querySelector(`div.${otherMode}-dropdown`) as HTMLDivElement | null;
   if (otherDropdown) {
     hideDropdown(otherMode);
-  } else console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
+  } else console.warn(`[toggleDropdown(${mode})] div.${otherMode}-dropdown not found`);
 }
 
 function hideDropdown(mode: 'colourblind' | 'theme') {
-  const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`) as HTMLDivElement | null;
+  const dropdown = document.querySelector(`div.${mode}-dropdown`) as HTMLDivElement | null;
   if (dropdown) {
     if (!dropdown.classList.contains('hide')) {
       // this timout only hides the dropdown after the animation is done
@@ -66,8 +65,8 @@ function hideDropdown(mode: 'colourblind' | 'theme') {
         const clone = dropdown.cloneNode(true) as HTMLDivElement;
         dropdown.parentElement?.replaceChild(clone, dropdown);
       }, 500); // this timeout is defined at sass/components/theme.dropdown.scss@28
-    } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown is already hidden`);
-  } else console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
+    } else console.warn(`[hideDropdown(${mode})] div.${mode}-dropdown is already hidden`);
+  } else console.warn(`[hideDropdown(${mode})] div.${mode}-dropdown not found`);
 }
 
 function setTheme(newTheme: Theme) {

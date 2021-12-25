@@ -5,13 +5,12 @@ let colourblind = (window.localStorage.getItem('colourblind') || 'none');
 (_a = document.querySelector('body')) === null || _a === void 0 ? void 0 : _a.classList.add(colourblind, theme);
 window.addEventListener('click', (e) => {
     const target = e.target;
-    if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme')) {
+    if (e.target && !hasSomeParentOfClass(target, 'theme-dropdown') && !hasSomeParentOfClass(target, 'theme-button')) {
         hideDropdown('theme');
-        hideDropdown('colourblind');
     }
 });
 function toggleDropdown(mode) {
-    const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`);
+    const dropdown = document.querySelector(`div.${mode}-dropdown`);
     if (dropdown) {
         if (!dropdown.classList.contains('hide') && !dropdown.classList.contains('will-hide')) {
             hideDropdown(mode);
@@ -51,15 +50,15 @@ function toggleDropdown(mode) {
     else
         console.warn(`[toggleDropdown(${mode})] div#${mode}-dropdown not found`);
     const otherMode = mode === 'colourblind' ? 'theme' : 'colourblind';
-    const otherDropdown = document.querySelector(`div#${otherMode}-dropdown.theme-dropdown`);
+    const otherDropdown = document.querySelector(`div.${otherMode}-dropdown`);
     if (otherDropdown) {
         hideDropdown(otherMode);
     }
     else
-        console.warn(`[toggleDropdown(${mode})] div#${otherMode}-dropdown not found`);
+        console.warn(`[toggleDropdown(${mode})] div.${otherMode}-dropdown not found`);
 }
 function hideDropdown(mode) {
-    const dropdown = document.querySelector(`div#${mode}-dropdown.theme-dropdown`);
+    const dropdown = document.querySelector(`div.${mode}-dropdown`);
     if (dropdown) {
         if (!dropdown.classList.contains('hide')) {
             dropdown.classList.add('will-hide');
@@ -72,10 +71,10 @@ function hideDropdown(mode) {
             }, 500);
         }
         else
-            console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown is already hidden`);
+            console.warn(`[hideDropdown(${mode})] div.${mode}-dropdown is already hidden`);
     }
     else
-        console.warn(`[hideDropdown(${mode})] div#${mode}-dropdown not found`);
+        console.warn(`[hideDropdown(${mode})] div.${mode}-dropdown not found`);
 }
 function setTheme(newTheme) {
     var _a, _b;

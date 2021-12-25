@@ -1,4 +1,4 @@
-button#theme-button {
+button.theme-button {
   &:hover {
     background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
     cursor: pointer;
