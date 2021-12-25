@@ -1,7 +1,7 @@
 button.theme-button {
-  transition: background-color 0.2s ease-in-out;
-  transition: transform 100ms linear;
-  background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 5%));
+  transition: background-color 200ms ease-in-out;
+  transition: transform 100ms ease-in;
+  background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 50%));
   transform: perspective(100px) translateZ(0px);
   border-radius: 5px;
   border: none;
@@ -13,7 +13,7 @@ button.theme-button {
   z-index: 999;
 }
 button.theme-button:hover {
-  background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 13%));
+  background-color: hsl(var(--secondary-hs), calc(var(--secondary-l) - 43%));
   cursor: pointer;
   transform: perspective(100px) translateZ(10px);
 }
