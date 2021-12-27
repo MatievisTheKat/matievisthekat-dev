@@ -4,7 +4,7 @@
   --primary2-hs: 11, 80%;
   --primary2-l: 60%;
   --primary3-hs: 66, 80%;
-  --primary3-l: 60%;
+  --primary3-l: 70%;
   --highlight-hs: 207, 90%;
   --highlight-l: 61%;
   --tertiary-hs: 145, 45%;
@@ -29,7 +29,7 @@ body.light.none {
   --primary2-l: 60%;
   --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 66, 80%;
-  --primary3-l: 60%;
+  --primary3-l: 70%;
   --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 207, 90%;
   --highlight-l: 61%;
@@ -61,7 +61,7 @@ body.dark.none {
   --primary2-l: 60%;
   --primary2: hsl(var(--primary2-hs), var(--primary2-l));
   --primary3-hs: 66, 80%;
-  --primary3-l: 60%;
+  --primary3-l: 70%;
   --primary3: hsl(var(--primary3-hs), var(--primary3-l));
   --highlight-hs: 207, 90%;
   --highlight-l: 61%;
