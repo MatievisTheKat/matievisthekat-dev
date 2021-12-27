@@ -19,7 +19,7 @@ div#external-links {
   flex-wrap: wrap;
   column-gap: 5px;
 }
-div#external-links > button {
+div#external-links button {
   border: none;
   border-radius: 2px;
   height: 55px;
@@ -29,10 +29,10 @@ div#external-links > button {
   font-weight: bolder;
   background: transparent;
 }
-div#external-links > button:hover {
+div#external-links button:hover {
   cursor: pointer;
   transform: perspective(20px) translateZ(2px);
 }
-div#external-links > button:active {
+div#external-links button:active {
   transform: perspective(20px) translateZ(1px);
 }
