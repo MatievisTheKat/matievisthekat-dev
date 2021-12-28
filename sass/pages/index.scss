@@ -71,6 +71,7 @@ div#external-links {
     &:hover {
       border: 3px hsl(var(--accent1-hs), calc(var(--accent1-l) + 10%)) dashed;
       margin: 4px 0;
+      cursor: pointer;
     }
   }
 }
