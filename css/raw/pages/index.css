@@ -64,19 +64,18 @@ div#external-links button:active {
 }
 #build-a-matt > img {
   border: 2px var(--accent1) dashed;
-  margin: -1px 0;
+  margin: 5px 0;
 }
-
 #head {
-  width: 133.3333333333px;
+  width: 150px;
 }
 
 #torso {
-  width: 333.3333333333px;
+  width: 300px;
 }
 
 #legs {
-  width: 233.3333333333px;
+  width: 166.6666666667px;
 }
 
 #feet {

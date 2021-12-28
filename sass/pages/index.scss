@@ -66,14 +66,18 @@ div#external-links {
 
   & > img {
     border: 2px var(--accent1) dashed;
-    margin: -1px 0;
+    margin: 5px 0;
+
+    &:hover {
+      
+    }
   }
 }
 
 $width-factor: 1.5;
-$head-width: 200px;
-$torso-width: 500px;
-$legs-width: 350px;
+$head-width: 225px;
+$torso-width: 450px;
+$legs-width: 250px;
 $feet-width: 250px;
 
 #head {
