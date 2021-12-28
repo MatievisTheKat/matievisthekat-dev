@@ -66,6 +66,11 @@ div#external-links button:active {
   border: 2px var(--accent1) dashed;
   margin: 5px 0;
 }
+#build-a-matt > img:hover {
+  border: 3px hsl(var(--accent1-hs), calc(var(--accent1-l) + 10%)) dashed;
+  margin: 4px 0;
+}
+
 #head {
   width: 150px;
 }
