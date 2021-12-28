@@ -51,39 +51,3 @@ div#external-links button:hover {
 div#external-links button:active {
   transform: perspective(20px) translateZ(1px);
 }
-
-#build-a-matt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (min-width: 892px) {
-  #build-a-matt {
-    width: 50%;
-  }
-}
-#build-a-matt > img {
-  border: 2px var(--accent1) dashed;
-  margin: 5px 0;
-}
-#build-a-matt > img:hover {
-  border: 3px hsl(var(--accent1-hs), calc(var(--accent1-l) + 10%)) dashed;
-  margin: 4px 0;
-  cursor: pointer;
-}
-
-#head {
-  width: 140.625px;
-}
-
-#torso {
-  width: 281.25px;
-}
-
-#legs {
-  width: 156.25px;
-}
-
-#feet {
-  width: 156.25px;
-}
