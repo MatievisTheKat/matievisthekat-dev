@@ -62,6 +62,10 @@ div#external-links button:active {
     width: 50%;
   }
 }
+#build-a-matt > img {
+  border: 2px var(--accent1) dashed;
+  margin: -1px 0;
+}
 
 #head {
   width: 133.3333333333px;

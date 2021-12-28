@@ -63,6 +63,11 @@ div#external-links {
   @media screen and (min-width: $m-screen-max) {
     width: 50%;
   }
+
+  & > img {
+    border: 2px var(--accent1) dashed;
+    margin: -1px 0;
+  }
 }
 
 $width-factor: 1.5;
