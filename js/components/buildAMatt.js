@@ -12,5 +12,6 @@ if (!legs)
 if (!feet)
     console.warn('[buildAMatt] img#feet not found');
 if (head && torso && legs && feet) {
+    feet.onclick = (e) => e.target.src = '/img/bam/feet/hiking_boots.png';
 }
 //# sourceMappingURL=buildAMatt.js.map

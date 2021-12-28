@@ -9,5 +9,5 @@ if (!legs) console.warn('[buildAMatt] img#legs not found');
 if (!feet) console.warn('[buildAMatt] img#feet not found');
 
 if (head && torso && legs && feet) {
-  
+  feet.onclick = (e) => (e.target as HTMLImageElement).src = '/img/bam/feet/hiking_boots.png'
 }
