@@ -1,6 +1,10 @@
 body {
   background: var(--primary3);
 }
+body > section, body > main > section {
+  margin: 40px 5% 5% 5%;
+  padding: 0 0.5rem;
+}
 
 main {
   display: flex;
@@ -19,8 +23,6 @@ main {
 
 #intro {
   text-align: left;
-  margin: 40px 5% 5% 5%;
-  padding: 0 0.5rem;
 }
 @media screen and (min-width: 892px) {
   #intro {
@@ -65,4 +67,39 @@ div#external-links button:hover {
 }
 div#external-links button:active {
   transform: perspective(20px) translateZ(1px);
+}
+
+section#more-content {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+}
+section#more-content > section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+section#more-content > section > .text {
+  width: 100%;
+}
+section#more-content > section > .image {
+  width: 100%;
+}
+section#more-content > section > .image > img {
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: var(--primary);
+  border-style: groove;
+  box-shadow: 3px 6px 3px 1px var(--shadow);
+}
+@media screen and (max-width: 892px) {
+  section#more-content > section {
+    flex-direction: column;
+  }
+  section#more-content > section > .image {
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
