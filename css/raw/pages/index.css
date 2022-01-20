@@ -28,6 +28,21 @@ main {
   }
 }
 
+section > #me {
+  text-align: center;
+  padding: 15px;
+  padding-right: 40px;
+}
+section > #me > img {
+  border-radius: 13px;
+  width: 100%;
+}
+@media screen and (max-width: 892px) {
+  section > #me > img {
+    display: none;
+  }
+}
+
 div#external-links {
   display: flex;
   flex-direction: row;
