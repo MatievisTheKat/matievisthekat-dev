@@ -73,10 +73,10 @@ div#external-links {
   }
 }
 
-section#more-content {
+section#personal > #sections {
   display: flex;
   flex-direction: column;
-  column-gap: 10px;
+  row-gap: 150px;
 
   & > section {
     display: flex;

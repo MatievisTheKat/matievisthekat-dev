@@ -69,23 +69,23 @@ div#external-links button:active {
   transform: perspective(20px) translateZ(1px);
 }
 
-section#more-content {
+section#personal > #sections {
   display: flex;
   flex-direction: column;
-  column-gap: 10px;
+  row-gap: 150px;
 }
-section#more-content > section {
+section#personal > #sections > section {
   display: flex;
   flex-direction: row;
-  column-gap: 5px;
+  column-gap: 20px;
 }
-section#more-content > section > .text {
+section#personal > #sections > section > .text {
   width: 100%;
 }
-section#more-content > section > .image {
+section#personal > #sections > section > .image {
   width: 100%;
 }
-section#more-content > section > .image > img {
+section#personal > #sections > section > .image > img {
   border-radius: 10px;
   border-width: 2px;
   border-color: var(--primary);
@@ -93,10 +93,10 @@ section#more-content > section > .image > img {
   box-shadow: 3px 6px 3px 1px var(--shadow);
 }
 @media screen and (max-width: 892px) {
-  section#more-content > section {
+  section#personal > #sections > section {
     flex-direction: column;
   }
-  section#more-content > section > .image {
+  section#personal > #sections > section > .image {
     align-items: center;
     width: 100%;
     margin-left: auto;
