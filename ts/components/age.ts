@@ -1,6 +1,6 @@
 const age = document.querySelector('span#age') as HTMLSpanElement | null;
 if (age) {
-  const birthday = new Date(2005, 4, 13);
+  const birthday = new Date(2005, 3, 13);
 
   setInterval(() => {
     const diff = Date.now() - birthday.getTime();

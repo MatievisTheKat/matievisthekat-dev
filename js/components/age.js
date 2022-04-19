@@ -1,7 +1,7 @@
 "use strict";
 const age = document.querySelector('span#age');
 if (age) {
-    const birthday = new Date(2005, 4, 13);
+    const birthday = new Date(2005, 3, 13);
     setInterval(() => {
         const diff = Date.now() - birthday.getTime();
         const yearInMs = 3.154e10;
