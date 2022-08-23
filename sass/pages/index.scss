@@ -3,14 +3,14 @@
 body {
   background: var(--primary3);
 
-  & > section,
-  & > main > section {
+  & > main > section,
+  & > header > section {
     margin: 40px 5% 5% 5%;
     padding: 0 0.5rem;
   }
 }
 
-main {
+header {
   display: flex;
   flex-wrap: nowrap;
 
@@ -73,7 +73,7 @@ div#external-links {
   }
 }
 
-section#personal > #sections {
+main > section#personal > #sections {
   display: flex;
   flex-direction: column;
   row-gap: 150px;
