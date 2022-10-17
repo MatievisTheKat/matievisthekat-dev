@@ -1,92 +1,47 @@
 @import './colours.scss';
 @import './mixins.scss';
 
-$themes: 'light', 'dark';
-
-$colourblind-options: 'none';
-
-:root {
-  $theme-map: map-get($colours, 'light');
-  $colourblind: map-get($theme-map, 'none');
-  --primary-hs: #{map-get($colourblind, 'primary-hs')};
-  --primary-l: #{map-get($colourblind, 'primary-l')};
-  --primary2-hs: #{map-get($colourblind, 'primary-2-hs')};
-  --primary2-l: #{map-get($colourblind, 'primary-2-l')};
-  --primary3-hs: #{map-get($colourblind, 'primary-3-hs')};
-  --primary3-l: #{map-get($colourblind, 'primary-3-l')};
-  --highlight-hs: #{map-get($colourblind, 'highlight-hs')};
-  --highlight-l: #{map-get($colourblind, 'highlight-l')};
-  --tertiary-hs: #{map-get($colourblind, 'tertiary-hs')};
-  --tertiary-l: #{map-get($colourblind, 'tertiary-l')};
-  --secondary-hs: #{map-get($colourblind, 'secondary-hs')};
-  --secondary-l: #{map-get($colourblind, 'secondary-l')};
-
-  $accent-map: map-get($colours, 'accent');
-  $colourblind: map-get($accent-map, 'none');
-  --accent1-hs: #{map-get($colourblind, '1-hs')};
-  --accent1-l: #{map-get($colourblind, '1-l')};
-  --accent2-hs: #{map-get($colourblind, '2-hs')};
-  --accent2-l: #{map-get($colourblind, '2-l')};
-  --accent3-hs: #{map-get($colourblind, '3-hs')};
-  --accent3-l: #{map-get($colourblind, '3-l')};
-  --accent4-hs: #{map-get($colourblind, '4-hs')};
-  --accent4-l: #{map-get($colourblind, '4-l')};
-}
-
 body {
-  @each $theme in $themes {
-    &.#{$theme} {
-      @each $colourblindness in $colourblind-options {
-        &.#{$colourblindness} {
-          $theme-map: map-get($colours, $theme);
-          $colourblind: map-get($theme-map, $colourblindness);
+  --primary-hs: #{map-get($colours, 'primary-hs')};
+  --primary-l: #{map-get($colours, 'primary-l')};
+  --primary: hsl(var(--primary-hs), var(--primary-l));
 
-          --primary-hs: #{map-get($colourblind, 'primary-hs')};
-          --primary-l: #{map-get($colourblind, 'primary-l')};
-          --primary: hsl(var(--primary-hs), var(--primary-l));
+  --primary2-hs: #{map-get($colours, 'primary-2-hs')};
+  --primary2-l: #{map-get($colours, 'primary-2-l')};
+  --primary2: hsl(var(--primary2-hs), var(--primary2-l));
 
-          --primary2-hs: #{map-get($colourblind, 'primary-2-hs')};
-          --primary2-l: #{map-get($colourblind, 'primary-2-l')};
-          --primary2: hsl(var(--primary2-hs), var(--primary2-l));
+  --primary3-hs: #{map-get($colours, 'primary-3-hs')};
+  --primary3-l: #{map-get($colours, 'primary-3-l')};
+  --primary3: hsl(var(--primary3-hs), var(--primary3-l));
 
-          --primary3-hs: #{map-get($colourblind, 'primary-3-hs')};
-          --primary3-l: #{map-get($colourblind, 'primary-3-l')};
-          --primary3: hsl(var(--primary3-hs), var(--primary3-l));
+  --highlight-hs: #{map-get($colours, 'highlight-hs')};
+  --highlight-l: #{map-get($colours, 'highlight-l')};
+  --highlight: hsl(var(--highlight-hs), var(--highlight-l));
 
-          --highlight-hs: #{map-get($colourblind, 'highlight-hs')};
-          --highlight-l: #{map-get($colourblind, 'highlight-l')};
-          --highlight: hsl(var(--highlight-hs), var(--highlight-l));
+  --tertiary-hs: #{map-get($colours, 'tertiary-hs')};
+  --tertiary-l: #{map-get($colours, 'tertiary-l')};
+  --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
 
-          --tertiary-hs: #{map-get($colourblind, 'tertiary-hs')};
-          --tertiary-l: #{map-get($colourblind, 'tertiary-l')};
-          --tertiary: hsl(var(--tertiary-hs), var(--tertiary-l));
+  --secondary-hs: #{map-get($colours, 'secondary-hs')};
+  --secondary-l: #{map-get($colours, 'secondary-l')};
+  --secondary: hsl(var(--secondary-hs), var(--secondary-l));
 
-          --secondary-hs: #{map-get($colourblind, 'secondary-hs')};
-          --secondary-l: #{map-get($colourblind, 'secondary-l')};
-          --secondary: hsl(var(--secondary-hs), var(--secondary-l));
+  $accents: map-get($colours, 'accent');
+  --accent1-hs: #{map-get($accents, 'one-hs')};
+  --accent1-l: #{map-get($accents, 'one-l')};
+  --accent1: hsl(var(--accent1-hs), var(--accent1-l));
 
-          $accent-map: map-get($colours, 'accent');
-          $accent-cb: map-get($accent-map, $colourblindness);
+  --accent2-hs: #{map-get($accents, 'two-hs')};
+  --accent2-l: #{map-get($accents, 'two-l')};
+  --accent2: hsl(var(--accent2-hs), var(--accent2-l));
 
-          --accent1-hs: #{map-get($accent-cb, 'one-hs')};
-          --accent1-l: #{map-get($accent-cb, 'one-l')};
-          --accent1: hsl(var(--accent1-hs), var(--accent1-l));
+  --accent3-hs: #{map-get($accents, 'three-hs')};
+  --accent3-l: #{map-get($accents, 'three-l')};
+  --accent3: hsl(var(--accent3-hs), var(--accent3-l));
 
-          --accent2-hs: #{map-get($accent-cb, 'two-hs')};
-          --accent2-l: #{map-get($accent-cb, 'two-l')};
-          --accent2: hsl(var(--accent2-hs), var(--accent2-l));
-
-          --accent3-hs: #{map-get($accent-cb, 'three-hs')};
-          --accent3-l: #{map-get($accent-cb, 'three-l')};
-          --accent3: hsl(var(--accent3-hs), var(--accent3-l));
-
-          --accent4-hs: #{map-get($accent-cb, 'four-hs')};
-          --accent4-l: #{map-get($accent-cb, 'four-l')};
-          --accent4: hsl(var(--accent4-hs), var(--accent4-l));
-        }
-      }
-    }
-  }
+  --accent4-hs: #{map-get($accents, 'four-hs')};
+  --accent4-l: #{map-get($accents, 'four-l')};
+  --accent4: hsl(var(--accent4-hs), var(--accent4-l));
 }
 
 body {
