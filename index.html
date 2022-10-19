@@ -217,7 +217,7 @@
         <div id="me">
           <img
             src="/img/me/450w.webp"
-            srcset="(min-width: 900px): 450px, (min-width: 1000px): 550px"
+            srcset="(min-width: 900px): 550px, (max-width: 899): 450px"
             sizes="/img/me/225w.webp 225w, /img/me/450w.webp 450w, /img/me/550w.webp 550w"
             alt="my face"
           />
@@ -258,7 +258,7 @@
                 style="--shadow: var(--primary2)"
                 src="/img/community/1280w.webp"
                 srcset="/img/community/1280w.webp 1280w, /img/community/900w.webp 900w, /img/community/600w.webp 600w, /img/community/300w.webp 300w"
-                sizes="(min-width: 900px): 900px, (min-width: 400px): 600px, 300px"
+                sizes="(min-width: 800px): 1280w, (max-width: 799px): 900px"
                 alt="Me working in a garden (community service)"
                 width="100%"
               />
@@ -323,7 +323,7 @@
               <img
                 style='--shadow: var(--tertiary)'
                 src='/img/spg/1000w.webp'
-                srcset="(min-width: 900px): 900px, (min-width: 400px): 600px, 300px"
+                srcset="(min-width: 900px): 900px, (min-width: 400px): 600px, (max-width: 399px): 300px"
                 sizes="/img/spg/1000w.webp 1000w, /img/spg/900w.webp 900w, /img/spg/600w.webp 600w, /img/spg/300w.webp 300w"
                 alt='Screenshot of https://spg.matievisthekat.dev'
                 width='100%'
@@ -333,31 +333,5 @@
         </div>
       </section>
     </main>
-
-    <!-- <button aria-label="site themes" class="theme-button" onclick="toggleDropdown('theme')">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
-        viewBox="0 0 24 24"
-        stroke-width="2"
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
-        <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
-        <line x1="9.7" y1="17" x2="14.3" y2="17"></line>
-      </svg>
-    </button>
-    <div class="hide theme-dropdown">
-      <h5>Theme</h5>
-      <ul style="padding-inline-start: 0">
-        <li data-value="light">light</li>
-        <li data-value="dark">dark</li>
-      </ul>
-    </div> -->
   </body>
 </html>
