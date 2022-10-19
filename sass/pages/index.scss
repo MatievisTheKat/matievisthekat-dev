@@ -5,8 +5,12 @@ body {
 
   & > main > section,
   & > header > section {
-    margin: 40px 5% 5% 5%;
+    margin: 40px 2% 2% 5%;
     padding: 0 0.5rem;
+  }
+
+  & > header > section {
+    width: 50%;
   }
 }
 
@@ -44,8 +48,6 @@ section > #me {
 
   & > img {
     border-radius: 13px;
-
-    width: 100%;
     @media screen and (max-width: $m-screen-max) {
       display: none;
     }

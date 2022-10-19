@@ -2,8 +2,11 @@ body {
   background: var(--primary3);
 }
 body > main > section, body > header > section {
-  margin: 40px 5% 5% 5%;
+  margin: 40px 2% 2% 5%;
   padding: 0 0.5rem;
+}
+body > header > section {
+  width: 50%;
 }
 
 header {
@@ -43,7 +46,6 @@ section > #me {
 }
 section > #me > img {
   border-radius: 13px;
-  width: 100%;
 }
 @media screen and (max-width: 800px) {
   section > #me > img {
