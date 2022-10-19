@@ -72,10 +72,6 @@ a:focus {
   cursor: pointer;
 }
 
-.hide {
-  display: none !important;
-}
-
 .feature {
   @include featureBackground();
 }
