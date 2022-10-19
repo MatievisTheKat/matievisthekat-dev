@@ -53,8 +53,10 @@ div.tooltip {
   justify-content: center;
   align-items: center;
   
-  background: radial-gradient(var(--secondary), rgba(255, 255, 255, 0));
+  background-color: var(--secondary);
   border-radius: 3px;
+  padding: 5px;
+  box-shadow: 0 3px 4px 1px grey;
   
   opacity: 0;
   animation: fadeIn 0.1s ease-in forwards;
@@ -84,7 +86,7 @@ div#external-links {
     border: none;
     border-radius: 2px;
     height: 65px;
-    width: 65px;
+    width: 75px;
     padding: 0;
     background: transparent;
 
