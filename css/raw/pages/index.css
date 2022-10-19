@@ -10,12 +10,12 @@ header {
   display: flex;
   flex-wrap: nowrap;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 800px) {
   header {
     flex-direction: row;
   }
 }
-@media screen and (max-width: 892px) {
+@media screen and (max-width: 800px) {
   header {
     flex-direction: column;
   }
@@ -24,7 +24,7 @@ header {
 #intro {
   text-align: left;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 800px) {
   #intro {
     width: 50%;
   }
@@ -39,7 +39,7 @@ section > #me > img {
   border-radius: 13px;
   width: 100%;
 }
-@media screen and (max-width: 892px) {
+@media screen and (max-width: 800px) {
   section > #me > img {
     display: none;
   }
@@ -116,7 +116,7 @@ main > section#personal > #sections > section > .image > img {
   border-style: groove;
   box-shadow: 3px 6px 3px 1px var(--shadow);
 }
-@media screen and (max-width: 892px) {
+@media screen and (max-width: 800px) {
   main > section#personal > #sections > section {
     flex-direction: column;
   }
