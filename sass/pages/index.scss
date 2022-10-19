@@ -11,6 +11,9 @@ body {
 
   & > header > section {
     width: 50%;
+    @media screen and (max-width: $m-screen-max) {
+      width: auto;
+    }
   }
 }
 

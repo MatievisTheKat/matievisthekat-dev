@@ -8,6 +8,11 @@ body > main > section, body > header > section {
 body > header > section {
   width: 50%;
 }
+@media screen and (max-width: 800px) {
+  body > header > section {
+    width: auto;
+  }
+}
 
 header {
   display: flex;
