@@ -46,6 +46,7 @@ section > #me {
 }
 section > #me > img {
   border-radius: 13px;
+  width: 80%;
 }
 @media screen and (max-width: 800px) {
   section > #me > img {

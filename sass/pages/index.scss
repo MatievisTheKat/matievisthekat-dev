@@ -48,6 +48,7 @@ section > #me {
 
   & > img {
     border-radius: 13px;
+    width: 80%;
     @media screen and (max-width: $m-screen-max) {
       display: none;
     }
