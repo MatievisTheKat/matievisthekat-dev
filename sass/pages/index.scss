@@ -1,7 +1,7 @@
 @import '../common/media.scss';
 
 body {
-  background: var(--primary3);
+  
 
   & > main > section,
   & > header > section {
@@ -28,12 +28,6 @@ header {
   @media screen and (max-width: $m-screen-max) {
     flex-direction: column;
   }
-}
-
-img {
-  aspect-ratio: attr(width) / attr(height);
-  width: 100%;
-  height: auto;
 }
 
 #intro {

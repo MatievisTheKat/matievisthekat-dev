@@ -45,7 +45,7 @@ body {
 }
 
 body {
-  background-color: hsl(var(--secondary-hs), var(--secondary-l));
+  background: var(--primary3);
   color: var(--primary);
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -70,6 +70,12 @@ a:focus {
   color: hsl(var(--highlight-hs), calc(var(--highlight-l) - 20%));
   text-decoration: solid underline 1px;
   cursor: pointer;
+}
+
+img {
+  aspect-ratio: attr(width) / attr(height);
+  width: 100%;
+  height: auto;
 }
 
 .feature {
