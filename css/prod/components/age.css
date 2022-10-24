@@ -1,1 +1,1 @@
-body:before{border-bottom:2px solid #000;content:'Error: expected ";".\a   \2577 \a 3 \2502  span#age\a   \2502      ^\a   \2575 \a   sass/components/age.scss 3:5  root stylesheet';display:block;font-family:Source Code Pro,SF Mono,Monaco,Inconsolata,Fira Mono,Droid Sans Mono,monospace,monospace;margin-bottom:1em;padding:1em;white-space:pre}
+span#age{background:linear-gradient(to right top,var(--accent3),var(--accent1));border-radius:5px;font-family:monospace;padding:2px}

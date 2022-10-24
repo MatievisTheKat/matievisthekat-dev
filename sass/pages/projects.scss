@@ -1,0 +1,11 @@
+@import '../common/media.scss';
+
+header {
+  padding: 70px 40px 70px 40px;
+}
+
+@media screen and (max-width: $sm-screen-max) {
+  header {
+    text-align: center;
+  }
+}
