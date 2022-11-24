@@ -4,8 +4,41 @@ header {
   padding: 70px 40px 70px 40px;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+
+  padding: 20px 70px;
+}
+
+.project {
+  max-width: 300px;
+
+  padding: 0;
+  margin-top: 3%;
+
+  background-color: rgb(253, 255, 218);
+  border-radius: 5px;
+
+  box-shadow: 2px 3px 5px 1px rgb(187, 187, 187);
+
+  & > img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  & > .text {
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: $sm-screen-max) {
   header {
     text-align: center;
+  }
+
+  main {
+    flex-direction: column;
   }
 }

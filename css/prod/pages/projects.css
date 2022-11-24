@@ -1,1 +1,1 @@
-header{padding:70px 40px}@media screen and (max-width:680px){header{text-align:center}}
+header{padding:70px 40px}main{display:flex;flex-direction:row;flex-wrap:wrap;gap:3%;padding:20px 70px}.project{background-color:#fdffda;border-radius:5px;box-shadow:2px 3px 5px 1px #bbb;margin-top:3%;max-width:300px;padding:0}.project>img{border-radius:5px 5px 0 0}.project>.text{padding:10px}@media screen and (max-width:680px){header{text-align:center}main{flex-direction:column}}
